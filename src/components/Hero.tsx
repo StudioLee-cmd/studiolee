@@ -129,7 +129,10 @@ const Hero: React.FC = () => {
                                 { src: "/integrations/gq8lRmwkPpp3HDcoHVAkSPVAU.png", alt: "Integration" },
                                 { src: "/integrations/klVnSEgUhyoG6RJq43d4GXNSS84.png", alt: "Integration" },
                                 { src: "/integrations/wBLEbrIFrSGbrbE3yxYT46fJco.png", alt: "Integration" },
-                                { src: "/integrations/zIuYWpI8ZvWttxlEFiL3LzrXoZg.png", alt: "Integration" }
+                                { src: "/integrations/zIuYWpI8ZvWttxlEFiL3LzrXoZg.png", alt: "Integration" },
+                                { src: "/images/logos/n8n.jpg", alt: "n8n" },
+                                { src: "/images/logos/copilot.png", alt: "Copilot" },
+                                { src: "/images/logos/storychief.png", alt: "StoryChief" }
                             ]}
                             speed={100}
                             direction="left"

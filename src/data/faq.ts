@@ -27,6 +27,6 @@ export const faqs: IFAQ[] = [
     },
     {
         question: "Bieden jullie exclusiviteit?",
-        answer: "Ja. Bij een Full-Service partnerschap bieden we de optie tot branche- of regio-exclusiviteit. Wij committeren ons aan uw marktleiderschap, en dat betekent dat we niet voor uw directe concurrenten werken.",
+        answer: "Ja, op aanvraag. We bieden exclusiviteit per niche + locatie combinatie. Dit betekent dat we bijvoorbeeld maar met één kapper, één loodgieter of één slotenmaker per stad werken – maar alleen als dit expliciet wordt aangevraagd. Zo beschermen we jouw marktpositie zonder onszelf onnodig te beperken.",
     }
 ];
