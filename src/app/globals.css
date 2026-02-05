@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  /* Slate 900 for high contrast text */
+  --primary: #0EA5E9;
+  /* Sky 500 */
+  --secondary: #0284C7;
+  /* Sky 600 */
+  --primary-accent: #38BDF8;
+  /* Sky 400 */
+  --foreground-accent: #334155;
+  /* Slate 700 */
+  --hero-background: #F0F9FF;
+  /* Sky 50 - very light blue tint */
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply text-lg;
+
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-caveat {
+  font-family: var(--font-caveat), cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#logos svg {
+  @apply w-fit h-10 sm:h-12;
+}
+
+.benefit-section:last-of-type>div {
+  @apply mb-10;
+}
