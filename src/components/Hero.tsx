@@ -54,14 +54,14 @@ const Hero: React.FC = () => {
     return (
         <section
             id="hero"
-            className="relative flex items-center justify-center pt-24 pb-20 md:pt-28 md:pb-32 px-5 bg-white overflow-hidden"
+            className="relative flex items-center justify-center pt-24 pb-20 md:pt-28 md:pb-32 px-6 sm:px-8 md:px-5 bg-white overflow-hidden"
         >
-            <div className="text-center relative z-10 max-w-6xl mx-auto">
+            <div className="text-center relative z-10 max-w-6xl mx-auto w-full overflow-x-hidden px-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 mb-8">
                     <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Jouw Groeipartner</span>
                 </div>
 
-                <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-black font-heading text-gray-900 tracking-tight leading-[1.1] mb-8">
+                <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-black font-heading text-gray-900 tracking-tight leading-[1.1] mb-8">
                     Jouw Tijd Is Kostbaar.<br />
                     Wij Automatiseren Je <br />
                     <span className="text-primary block mt-2 h-[1.2em] relative">
@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
                     </span>
                 </h1>
 
-                <p className="mt-8 text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto font-medium leading-relaxed">
+                <p className="mt-8 text-base sm:text-lg md:text-2xl text-gray-500 max-w-3xl mx-auto font-medium leading-relaxed">
                     STUDIOLEE maakt werken met AI, marketing en automatisering 10x makkelijker.
                     Wij geven ondernemers meer kracht en efficiëntie.
                 </p>
