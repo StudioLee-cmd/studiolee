@@ -68,7 +68,7 @@ const ConsultingPricing = () => {
                                 disabled={loading === 'laser'}
                                 className="flex items-center justify-center w-full py-4 rounded-xl bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
-                                {loading === 'laser' ? 'Momentje...' : <><ShinyText text="Start Je Groei Nu" speed={3} color="#ffffff" shineColor="#60a5fa" /> <BsArrowRight /></>}
+                                {loading === 'laser' ? 'Momentje...' : <>Start Je Groei Nu <BsArrowRight /></>}
                             </button>
                         </div>
                     </div>

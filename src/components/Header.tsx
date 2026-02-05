@@ -7,6 +7,7 @@ import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 
 import Container from './Container';
 import FreeTrialModal from './FreeTrialModal';
+import ShinyText from './ShinyText';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 
@@ -54,7 +55,7 @@ const Header: React.FC = () => {
                             onClick={() => document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' })}
                             className="text-white bg-primary hover:bg-secondary px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
                         >
-                            Start Gratis
+                            <ShinyText text="Plan Een Gesprek" speed={3} color="#ffffff" shineColor="#60a5fa" />
                         </button>
                     </div>
 
