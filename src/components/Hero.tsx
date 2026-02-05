@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                     <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Jouw Groeipartner</span>
                 </div>
 
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black font-heading text-gray-900 tracking-tight leading-[1.05] mb-8">
+                <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-black font-heading text-gray-900 tracking-tight leading-[1.1] mb-8">
                     Jouw Tijd Is Kostbaar.<br />
                     Wij Automatiseren Je <br />
                     <span className="text-primary block mt-2 h-[1.2em] relative">
