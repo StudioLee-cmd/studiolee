@@ -27,7 +27,7 @@ const YouTubeSection = () => {
                         </p>
 
                         <a
-                            href="https://www.youtube.com/@studiolee"
+                            href="https://www.youtube.com/@DIGITAL.STUDIOLEE"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-colors"
