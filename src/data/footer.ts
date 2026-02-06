@@ -11,19 +11,19 @@ export const footerDetails: {
     address: string;
     legalName: string;
 } = {
-    subheading: "Focus op de lekkage, wij op de rest. Wij regelen je telefoontjes, planning en marketing, zodat jij kunt doen waar je goed in bent.",
+    subheading: "STUDIOLEE helpt ambitieuze ondernemers groeien met slimme AI-oplossingen, marketing en automatisering. Wij regelen de techniek, zodat jij je kunt focussen op je bedrijf.",
     quickLinks: [
         {
-            text: "Functies",
-            url: "#features"
-        },
-        {
-            text: "Prijzen",
-            url: "#pricing"
+            text: "Tarieven",
+            url: "#consulting"
         },
         {
             text: "Ervaringen",
             url: "#testimonials"
+        },
+        {
+            text: "Blog",
+            url: "/blog"
         }
     ],
     email: 'tim@studiolee.nl',

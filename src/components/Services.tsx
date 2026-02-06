@@ -6,8 +6,8 @@ import { BsGraphUp, BsPeople, BsPalette, BsStar, BsGear, BsCodeSlash, BsLightnin
 
 const services = [
     {
-        title: "Vindbaarheid in ChatGPT & Google",
-        description: "Dominantie in AI-zoeksystemen én Google. Wij zorgen dat jouw klanten je vinden, ongeacht hoe ze zoeken.",
+        title: "AI & Google Vindbaarheid",
+        description: "Dominantie in ChatGPT en Google. Wij zorgen dat jouw klanten je vinden, ongeacht welk platform ze gebruiken.",
         icon: BsGraphUp
     },
     {
@@ -26,8 +26,8 @@ const services = [
         icon: BsStar
     },
     {
-        title: "Automations (n8n)",
-        description: "Slimme workflows die saai werk uit handen nemen. Van facturatie tot klantcontact.",
+        title: "Automations",
+        description: "Slimme n8n workflows die saai werk uit handen nemen. Van facturatie tot complex klantcontact.",
         icon: BsGear
     },
     {
@@ -36,8 +36,8 @@ const services = [
         icon: BsCodeSlash
     },
     {
-        title: "CRO (Conversie)",
-        description: "Optimalisatie van je site om meer rendement uit elke bezoeker te halen.",
+        title: "Conversie Optimalisatie",
+        description: "CRO-technieken die je site optimaliseren om meer rendement uit elke bezoeker te halen.",
         icon: BsLightning
     },
     {
