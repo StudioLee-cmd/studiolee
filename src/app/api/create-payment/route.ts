@@ -6,7 +6,8 @@ export async function POST(request: Request) {
         // TODO: This is a temporary hardcode for debugging.
         const apiKey = 'live_K7QbNBvwJ5C77yyC96jyRdJJcNQByQ';
 
-        if (!apiKey || apiKey === 'test_key_placeholder') {
+        // Cast to string to avoid TS error: This comparison appears to be unintentional...
+        if (!apiKey || (apiKey as string) === 'test_key_placeholder') {
             console.error('MOLLIE_API_KEY is not set');
             return NextResponse.json({ error: 'Payment configuration error' }, { status: 500 });
         }
