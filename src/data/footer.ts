@@ -24,6 +24,10 @@ export const footerDetails: {
         {
             text: "Blog",
             url: "/blog"
+        },
+        {
+            text: "Portfolio",
+            url: "/portfolio"
         }
     ],
     email: 'tim@studiolee.nl',
