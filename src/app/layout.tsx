@@ -58,7 +58,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <FloatingPhone />
       </body>
     </html>
   );
