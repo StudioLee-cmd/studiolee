@@ -4,6 +4,7 @@ import { Source_Sans_3, Manrope, Caveat, Outfit } from "next/font/google";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingPhone from "@/components/FloatingPhone";
 import { siteDetails } from '@/data/siteDetails';
 
 import "./globals.css";
@@ -57,6 +58,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <FloatingPhone />
       </body>
     </html>
   );
