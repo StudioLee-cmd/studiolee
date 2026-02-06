@@ -36,9 +36,16 @@ const Footer: React.FC = () => {
                 </div>
                 <div>
                     <h4 className="text-lg font-semibold mb-4">Contact & Info</h4>
-                    <ul className="text-foreground-accent space-y-2">
+                    <ul className="text-foreground-accent space-y-3">
                         {footerDetails.email && <li><a href={`mailto:${footerDetails.email}`} className="hover:text-foreground flex items-center gap-2">✉️ {footerDetails.email}</a></li>}
-                        <li><a href="tel:+3197010223669" className="hover:text-foreground flex items-center gap-2">📞 +31 970 102 23669</a></li>
+                        <li>
+                            <a
+                                href="tel:+3197010223669"
+                                className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-white px-5 py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold text-sm"
+                            >
+                                📞 +31 970 102 23669
+                            </a>
+                        </li>
                     </ul>
 
                     {footerDetails.socials && (
