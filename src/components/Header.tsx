@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                             <img
                                 src="/images/brand/logo-header-v3.png"
                                 alt={siteDetails.siteName}
-                                className="h-8 md:h-10 w-auto object-contain"
+                                className="h-6 md:h-10 w-auto object-contain"
                             />
                         </Link>
                     </div>
