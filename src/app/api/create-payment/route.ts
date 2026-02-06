@@ -3,7 +3,8 @@ import { createMollieClient } from '@mollie/api-client';
 
 export async function POST(request: Request) {
     try {
-        const apiKey = process.env.MOLLIE_API_KEY;
+        // TODO: This is a temporary hardcode for debugging.
+        const apiKey = 'live_K7QbNBvwJ5C77yyC96jyRdJJcNQByQ';
 
         if (!apiKey || apiKey === 'test_key_placeholder') {
             console.error('MOLLIE_API_KEY is not set');
