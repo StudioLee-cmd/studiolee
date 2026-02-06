@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
     return (
         <section
             id="hero"
-            className="relative flex items-center justify-center pt-24 pb-20 md:pt-28 md:pb-32 px-6 sm:px-8 md:px-5 bg-white overflow-hidden"
+            className="relative flex items-center justify-center pt-24 pb-20 md:pt-28 md:pb-32 px-6 sm:px-8 md:px-5 overflow-hidden"
         >
             <div className="text-center relative z-10 max-w-6xl mx-auto w-full overflow-x-hidden px-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 mb-8">

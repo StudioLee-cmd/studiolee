@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #F8FAFC;
   --foreground: #0f172a;
   /* Slate 900 for high contrast text */
   --primary: #0EA5E9;
