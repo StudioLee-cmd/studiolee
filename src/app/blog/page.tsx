@@ -15,9 +15,9 @@ const BlogPage = () => {
         <div className="py-24 bg-white">
             <Container>
                 <div className="mb-12 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Waarom Kiezen Voor STUDIOLEE</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Kennisbank</h1>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Het laatste nieuws, tips en inzichten over AI voor loodgieters.
+                        Artikelen, tips en inzichten over SEO, CRO, AI en automatisering voor ondernemers.
                     </p>
                 </div>
 
