@@ -3,13 +3,11 @@ import { createMollieClient } from '@mollie/api-client';
 
 export async function POST(request: Request) {
     try {
-        // TODO: This is a temporary hardcode for debugging.
-        const apiKey = 'live_K7QbNBvwJ5C77yyC96jyRdJJcNQByQ';
+        const apiKey = process.env.MOLLIE_API_KEY;
 
-        // Cast to string to avoid TS error: This comparison appears to be unintentional...
-        if (!apiKey || (apiKey as string) === 'test_key_placeholder') {
+        if (!apiKey || apiKey === 'test_key_placeholder') {
             console.error('MOLLIE_API_KEY is not set');
-            return NextResponse.json({ error: 'Payment configuration error' }, { status: 500 });
+            return NextResponse.json({ error: 'Payment configuration error: MOLLIE_API_KEY is missing' }, { status: 500 });
         }
 
         const mollieClient = createMollieClient({ apiKey });
