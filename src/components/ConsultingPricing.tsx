@@ -25,11 +25,11 @@ const ConsultingPricing = () => {
                 window.location.href = data.checkoutUrl;
             } else {
                 console.error("Payment creation failed", data);
-                alert("Er ging iets mis met het starten van de betaling. Probeer het later opnieuw.");
+                alert(`Er ging iets mis: ${data.error || 'Onbekende fout'}`);
             }
-        } catch (error) {
+        } catch (error: any) {
             console.error(error);
-            alert("Er is een fout opgetreden.");
+            alert(`Er is een fout opgetreden: ${error.message}`);
         } finally {
             setLoading(null);
         }
