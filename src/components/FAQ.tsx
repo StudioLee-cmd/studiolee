@@ -33,7 +33,7 @@ const FAQ: React.FC = () => {
                         <p className="text-gray-300 mb-6 text-sm leading-relaxed relative z-10">
                             Sluit je aan bij de ondernemers die al tijd en geld besparen met STUDIOLEE.
                         </p>
-                        <a href="#pricing" className="relative z-10 inline-block w-full">
+                        <a href="#consulting" className="relative z-10 inline-block w-full">
                             <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-yellow-600 text-black font-bold hover:from-yellow-300 hover:to-yellow-500 transition-all shadow-lg transform hover:scale-[1.02]">
                                 Start gratis
                             </button>
