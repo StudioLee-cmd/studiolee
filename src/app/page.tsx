@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
               'tafelai.nl', 'hovenierai.nl', 'fietsenai.nl', 'woningai.nl',
               'huisartsenai.nl', 'aireclamestudio.nl', 'lazyaiads.com',
               'lazyaicontent.com', 'lazysocials.com', 'lazyaiautomations.com',
-              'lazyaivoice.com', 'lazybacklinks.com', 'lazyaiseo.com'
+              'lazyaivoice.com', 'lazybacklinks.com', 'lazyaiseo.com', 'vertaalai.nl'
             ].map((domain) => (
               <a
                 key={domain}
