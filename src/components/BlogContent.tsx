@@ -15,6 +15,9 @@ export default function BlogContent({ content }: BlogContentProps) {
                     line-height: 1.8;
                     color: #1f2937;
                 }
+                .dark .blog-content {
+                    color: #d1d5db;
+                }
                 .blog-content h2 {
                     font-size: 2rem;
                     font-weight: 700;
@@ -22,6 +25,9 @@ export default function BlogContent({ content }: BlogContentProps) {
                     margin-bottom: 1.5rem;
                     color: #111827;
                     line-height: 1.3;
+                }
+                .dark .blog-content h2 {
+                    color: #ffffff;
                 }
                 .blog-content h3 {
                     font-size: 1.5rem;
@@ -31,13 +37,22 @@ export default function BlogContent({ content }: BlogContentProps) {
                     color: #1f2937;
                     line-height: 1.4;
                 }
+                .dark .blog-content h3 {
+                    color: #e5e7eb;
+                }
                 .blog-content p {
                     margin-bottom: 1.5rem;
                     color: #374151;
                 }
+                .dark .blog-content p {
+                    color: #9ca3af;
+                }
                 .blog-content strong {
                     color: #111827;
                     font-weight: 600;
+                }
+                .dark .blog-content strong {
+                    color: #ffffff;
                 }
                 .blog-content ul, .blog-content ol {
                     margin-bottom: 2rem;
@@ -47,6 +62,9 @@ export default function BlogContent({ content }: BlogContentProps) {
                     margin-bottom: 0.75rem;
                     color: #374151;
                     line-height: 1.7;
+                }
+                .dark .blog-content li {
+                    color: #9ca3af;
                 }
                 .blog-content ul li {
                     list-style-type: none;
@@ -59,6 +77,9 @@ export default function BlogContent({ content }: BlogContentProps) {
                     left: 0;
                     color: #2563eb;
                     font-weight: 600;
+                }
+                .dark .blog-content ul li:before {
+                    color: #f97316;
                 }
                 .blog-content ol {
                     counter-reset: item;
@@ -77,6 +98,9 @@ export default function BlogContent({ content }: BlogContentProps) {
                     font-weight: 700;
                     font-size: 1.125rem;
                 }
+                .dark .blog-content ol li:before {
+                    color: #f97316;
+                }
                 .blog-content blockquote {
                     border-left: 4px solid #2563eb;
                     padding-left: 1.5rem;
@@ -86,6 +110,11 @@ export default function BlogContent({ content }: BlogContentProps) {
                     border-radius: 0.5rem;
                     font-style: italic;
                     color: #475569;
+                }
+                .dark .blog-content blockquote {
+                    border-left-color: #f97316;
+                    background: #171717;
+                    color: #9ca3af;
                 }
                 .blog-content blockquote p {
                     margin-bottom: 0.75rem;
@@ -101,3 +130,4 @@ export default function BlogContent({ content }: BlogContentProps) {
         </>
     );
 }
+

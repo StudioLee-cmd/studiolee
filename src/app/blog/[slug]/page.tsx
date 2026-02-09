@@ -19,10 +19,10 @@ const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) =
     const author = getAuthorBySlug(post.authorSlug);
 
     return (
-        <div className="py-24 bg-white">
+        <div className="py-24 bg-white dark:bg-black">
             <Container className="max-w-4xl">
                 <div className="mb-8">
-                    <Link href="/blog" className="inline-flex items-center text-sm font-medium text-gray-500 hover:text-blue-600 transition-colors">
+                    <Link href="/blog" className="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-primary transition-colors">
                         <FiArrowLeft className="mr-2" />
                         Terug naar overzicht
                     </Link>
@@ -42,13 +42,13 @@ const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) =
                 </div>
 
                 <div className="max-w-3xl mx-auto">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white leading-tight">
                         {post.title}
                     </h1>
 
-                    <div className="flex items-center gap-6 text-sm text-gray-500 mb-8 pb-8 border-b border-gray-100">
+                    <div className="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 mb-8 pb-8 border-b border-gray-100 dark:border-neutral-800">
                         {author && (
-                            <Link href={`/author/${author.slug}`} className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+                            <Link href={`/author/${author.slug}`} className="flex items-center gap-2 hover:text-blue-600 dark:hover:text-primary transition-colors">
                                 <Image
                                     src={author.image}
                                     alt={author.name}
@@ -65,7 +65,7 @@ const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) =
                         </div>
                         <div className="flex gap-2">
                             {post.tags.map(tag => (
-                                <span key={tag} className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded-full">
+                                <span key={tag} className="text-xs font-semibold text-blue-600 dark:text-primary bg-blue-50 dark:bg-primary/10 px-2 py-1 rounded-full">
                                     {tag}
                                 </span>
                             ))}
@@ -76,7 +76,7 @@ const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) =
 
                     {/* Author Bio Card */}
                     {author && (
-                        <div className="mt-12 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <div className="mt-12 p-6 bg-gray-50 dark:bg-neutral-900 rounded-2xl border border-gray-100 dark:border-neutral-800">
                             <div className="flex gap-4 items-start">
                                 <Link href={`/author/${author.slug}`}>
                                     <Image
@@ -88,11 +88,11 @@ const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) =
                                     />
                                 </Link>
                                 <div className="flex-1">
-                                    <Link href={`/author/${author.slug}`} className="text-xl font-bold hover:text-blue-600 transition-colors">
+                                    <Link href={`/author/${author.slug}`} className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-primary transition-colors">
                                         {author.name}
                                     </Link>
-                                    <p className="text-sm text-blue-600 mb-2">{author.role}</p>
-                                    <p className="text-gray-700 text-sm">{author.bio}</p>
+                                    <p className="text-sm text-blue-600 dark:text-primary mb-2">{author.role}</p>
+                                    <p className="text-gray-700 dark:text-gray-300 text-sm">{author.bio}</p>
                                 </div>
                             </div>
                         </div>
@@ -104,3 +104,4 @@ const BlogPostPage = async ({ params }: { params: Promise<{ slug: string }> }) =
 };
 
 export default BlogPostPage;
+
