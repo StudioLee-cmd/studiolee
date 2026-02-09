@@ -20,16 +20,16 @@ const TestimonialCard = memo(({ name, role, message, stars = 5 }: TestimonialCar
             {[...Array(5)].map((_, i) => (
                 <FaStar
                     key={i}
-                    className={`w-3 h-3 ${i < stars ? 'text-amber-400' : 'text-gray-200'}`}
+                    className={`w-3 h-3 ${i < stars ? 'text-amber-400' : 'text-gray-200 dark:text-neutral-700'}`}
                 />
             ))}
         </div>
-        <p className="text-gray-700 text-sm italic mb-4 line-clamp-3">
+        <p className="text-gray-700 dark:text-gray-300 text-sm italic mb-4 line-clamp-3">
             &quot;{message}&quot;
         </p>
         <div className="mt-auto">
-            <h4 className="font-bold text-gray-900 text-sm">{name}</h4>
-            <p className="text-xs text-gray-500">{role}</p>
+            <h4 className="font-bold text-gray-900 dark:text-white text-sm">{name}</h4>
+            <p className="text-xs text-gray-500 dark:text-gray-400">{role}</p>
         </div>
     </div>
 ));
@@ -163,12 +163,12 @@ const TestimonialsSlider = () => {
     const row2 = testimonials.slice(Math.ceil(testimonials.length / 2));
 
     return (
-        <section id="testimonials" className="py-16 bg-gray-50 overflow-hidden">
+        <section id="testimonials" className="py-16 bg-gray-50 dark:bg-neutral-950 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 mb-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
                     Wat Onze Klanten Zeggen
                 </h2>
-                <p className="text-center text-gray-500 max-w-2xl mx-auto">
+                <p className="text-center text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
                     Echte ondernemers, echte resultaten. Ontdek hoe STUDIOLEE hun bedrijf transformeerde.
                 </p>
             </div>
