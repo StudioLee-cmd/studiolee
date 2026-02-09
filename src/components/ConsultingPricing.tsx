@@ -44,29 +44,29 @@ const ConsultingPricing = () => {
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
                     {/* Laser Call */}
-                    <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-xl hover:shadow-2xl transition-all relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
+                    <div className="bg-white dark:bg-neutral-900 rounded-3xl p-8 border border-gray-100 dark:border-neutral-800 shadow-xl hover:shadow-2xl transition-all relative overflow-hidden group">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 dark:bg-primary/10 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
 
                         <div className="relative z-10">
-                            <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                            <div className="w-12 h-12 bg-blue-100 dark:bg-primary/20 text-blue-600 dark:text-primary rounded-2xl flex items-center justify-center mb-6">
                                 <BsLightningCharge size={24} />
                             </div>
 
-                            <h3 className="text-2xl font-bold text-gray-900 mb-2">Laser Call</h3>
+                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Laser Call</h3>
                             <div className="flex items-baseline gap-1 mb-4">
-                                <span className="text-4xl font-black text-gray-900">€179</span>
-                                <span className="text-gray-500">/ 15 min</span>
+                                <span className="text-4xl font-black text-gray-900 dark:text-white">€179</span>
+                                <span className="text-gray-500 dark:text-gray-400">/ 15 min</span>
                             </div>
 
-                            <p className="text-gray-600 mb-8 min-h-[3rem]">
+                            <p className="text-gray-600 dark:text-gray-400 mb-8 min-h-[3rem]">
                                 Twijfel je nog? Of weet je nog niet precies wat je nodig hebt? We bespreken je situatie kort.
-                                <span className="block mt-2 text-xs font-semibold text-blue-600">* Kosten worden in mindering gebracht bij samenwerking.</span>
+                                <span className="block mt-2 text-xs font-semibold text-blue-600 dark:text-primary">* Kosten worden in mindering gebracht bij samenwerking.</span>
                             </p>
 
                             <button
                                 onClick={() => handlePayment('laser')}
                                 disabled={loading === 'laser'}
-                                className="flex items-center justify-center w-full py-4 rounded-xl bg-gray-900 text-white font-bold hover:bg-gray-800 transition-colors gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                                className="flex items-center justify-center w-full py-4 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
                                 {loading === 'laser' ? 'Momentje...' : <>Start Je Groei Nu <BsArrowRight /></>}
                             </button>

@@ -57,12 +57,12 @@ const Services = () => {
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {services.map((service, index) => (
-                        <div key={index} className="p-6 rounded-2xl bg-gray-50 hover:bg-white border border-gray-100 hover:border-blue-100 hover:shadow-lg transition-all group">
-                            <div className="w-12 h-12 bg-white text-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <div key={index} className="p-6 rounded-2xl bg-gray-50 dark:bg-neutral-800/50 hover:bg-white dark:hover:bg-neutral-800 border border-gray-100 dark:border-neutral-800 hover:border-blue-100 dark:hover:border-primary/50 hover:shadow-lg transition-all group">
+                            <div className="w-12 h-12 bg-white dark:bg-neutral-900 text-blue-600 dark:text-primary rounded-xl flex items-center justify-center mb-4 shadow-sm group-hover:bg-blue-600 dark:group-hover:bg-primary group-hover:text-white transition-colors">
                                 <service.icon size={24} />
                             </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{service.title}</h3>
+                            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                                 {service.description}
                             </p>
                         </div>

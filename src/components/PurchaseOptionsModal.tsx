@@ -52,13 +52,13 @@ const PurchaseOptionsModal: React.FC<PurchaseOptionsModalProps> = ({ isOpen, onC
             {/* Modal */}
             <div className="flex min-h-full items-center justify-center p-4">
                 <div
-                    className="relative bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 transform transition-all"
+                    className="relative bg-white dark:bg-neutral-900 rounded-2xl shadow-2xl max-w-lg w-full p-8 transform transition-all border border-gray-100 dark:border-neutral-800"
                     onClick={(e) => e.stopPropagation()}
                 >
                     {/* Close Button */}
                     <button
                         onClick={onClose}
-                        className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+                        className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 transition-colors"
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -66,10 +66,10 @@ const PurchaseOptionsModal: React.FC<PurchaseOptionsModalProps> = ({ isOpen, onC
                     </button>
 
                     <div className="text-center mb-8">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                             Kies hoe je wilt starten met {tier.name}
                         </h2>
-                        <p className="text-gray-600">
+                        <p className="text-gray-600 dark:text-gray-400">
                             Wil je eerst even sparren of direct aan de slag?
                         </p>
                     </div>
@@ -80,15 +80,15 @@ const PurchaseOptionsModal: React.FC<PurchaseOptionsModalProps> = ({ isOpen, onC
                             href={bookingUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex flex-col items-center justify-center p-6 border-2 border-gray-100 rounded-xl hover:border-primary/50 hover:bg-blue-50 transition-all group cursor-pointer text-center"
+                            className="flex flex-col items-center justify-center p-6 border-2 border-gray-100 dark:border-neutral-800 rounded-xl hover:border-primary/50 hover:bg-blue-50 dark:hover:bg-neutral-800 transition-all group cursor-pointer text-center"
                         >
-                            <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+                            <div className="w-12 h-12 bg-blue-100 dark:bg-neutral-800 rounded-full flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                 </svg>
                             </div>
-                            <h3 className="font-bold text-gray-900 mb-1">Boek een Demo</h3>
-                            <p className="text-sm text-gray-500">Gratis strategie gesprek van 15-30 min.</p>
+                            <h3 className="font-bold text-gray-900 dark:text-white mb-1">Boek een Demo</h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">Gratis strategie gesprek van 15-30 min.</p>
                         </a>
 
                         {/* Option 2: Direct Pay */}

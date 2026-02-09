@@ -41,7 +41,7 @@ const IntegrationMarquee = () => {
                 {/* Loop 1 */}
                 <div className="flex gap-12 items-center">
                     {icons.map((icon, index) => (
-                        <div key={`i1-${index}`} className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center p-3 relative hover:scale-110 transition-transform">
+                        <div key={`i1-${index}`} className="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-neutral-800 rounded-2xl shadow-sm border border-gray-100 dark:border-neutral-700 flex items-center justify-center p-3 relative hover:scale-110 transition-transform">
                             <Image
                                 src={`/integrations/${icon}`}
                                 alt="Integration"
@@ -55,7 +55,7 @@ const IntegrationMarquee = () => {
                 {/* Loop 2 for seamless effect */}
                 <div className="flex gap-12 items-center">
                     {icons.map((icon, index) => (
-                        <div key={`i2-${index}`} className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center p-3 relative hover:scale-110 transition-transform">
+                        <div key={`i2-${index}`} className="w-16 h-16 md:w-20 md:h-20 bg-white dark:bg-neutral-800 rounded-2xl shadow-sm border border-gray-100 dark:border-neutral-700 flex items-center justify-center p-3 relative hover:scale-110 transition-transform">
                             <Image
                                 src={`/integrations/${icon}`}
                                 alt="Integration"

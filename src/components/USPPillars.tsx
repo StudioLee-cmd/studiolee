@@ -27,29 +27,29 @@ const pillars = [
 
 const USPPillars: React.FC = () => {
     return (
-        <section id="bento-grid" className="py-20 bg-white">
+        <section id="bento-grid" className="py-20 bg-white dark:bg-black">
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {pillars.map((pillar, index) => (
                         <div
                             key={index}
-                            className="group flex flex-col items-start p-10 rounded-[2.5rem] bg-hero-background border border-gray-100 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 h-full relative overflow-hidden"
+                            className="group flex flex-col items-start p-10 rounded-[2.5rem] bg-hero-background border border-gray-100 dark:border-neutral-800 hover:border-primary/20 shadow-sm hover:shadow-xl transition-all duration-300 h-full relative overflow-hidden"
                         >
                             <div className="absolute top-0 right-0 p-10 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110 duration-500">
                                 {React.cloneElement(pillar.icon as React.ReactElement, { size: 120, className: "text-primary" })}
                             </div>
 
-                            <div className="p-4 rounded-2xl bg-white shadow-md mb-8 text-primary ring-4 ring-primary/10">
+                            <div className="p-4 rounded-2xl bg-white dark:bg-neutral-800 shadow-md mb-8 text-primary ring-4 ring-primary/10">
                                 {pillar.icon}
                             </div>
 
-                            <h3 className="text-3xl font-bold text-gray-900 mb-3 tracking-tight">
+                            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 tracking-tight">
                                 {pillar.title}
                             </h3>
                             <span className="text-sm font-bold uppercase tracking-widest text-primary mb-5 block">
                                 {pillar.subtitle}
                             </span>
-                            <p className="text-gray-600 leading-relaxed text-lg font-medium relative z-10">
+                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-lg font-medium relative z-10">
                                 {pillar.description}
                             </p>
                         </div>

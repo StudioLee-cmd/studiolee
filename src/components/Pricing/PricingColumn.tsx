@@ -47,15 +47,15 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight, isAnnual, onStartTria
     const currentSavings = tier.savings; // Use the explicit savings string from data
 
     return (
-        <div className={clsx("w-full max-w-sm mx-auto bg-white rounded-xl border border-gray-200 lg:max-w-full flex flex-col h-full", { "shadow-2xl border-primary ring-2 ring-primary/20": highlight })}>
-            <div className="p-6 border-b border-gray-200 rounded-t-xl flex-grow">
-                <h3 className="text-2xl font-semibold mb-4">{name}</h3>
-                <p className="text-3xl md:text-5xl font-bold mb-2">
+        <div className={clsx("w-full max-w-sm mx-auto bg-white dark:bg-neutral-900 rounded-xl border border-gray-200 dark:border-neutral-800 lg:max-w-full flex flex-col h-full", { "shadow-2xl border-primary ring-2 ring-primary/20": highlight })}>
+            <div className="p-6 border-b border-gray-200 dark:border-neutral-800 rounded-t-xl flex-grow">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">{name}</h3>
+                <p className="text-3xl md:text-5xl font-bold mb-2 text-gray-900 dark:text-white">
                     <span className={clsx({ "text-secondary": highlight })}>
                         {pricePrefix && <span className="text-xl mr-2">{pricePrefix}</span>}
                         {currentPrice}
                     </span>
-                    <span className="text-lg font-normal text-gray-600"> p/m</span>
+                    <span className="text-lg font-normal text-gray-600 dark:text-gray-400"> p/m</span>
                     <span className="text-xs font-normal text-gray-400 opacity-75 ml-1">
                         ({name === 'Basic' ? 'Incl BTW' : 'Excl BTW'})
                     </span>

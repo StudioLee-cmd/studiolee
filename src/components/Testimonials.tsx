@@ -10,25 +10,25 @@ const Testimonials: React.FC = () => {
                 {testimonials.map((testimonial, index) => (
                     <div
                         key={index}
-                        className="flex flex-col bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow h-full"
+                        className="flex flex-col bg-white dark:bg-neutral-900 p-6 rounded-2xl border border-gray-100 dark:border-neutral-800 shadow-sm hover:shadow-md transition-shadow h-full"
                     >
                         <div className="flex mb-4">
                             {[...Array(5)].map((_, i) => (
                                 <FaStar
                                     key={i}
-                                    className={`w-4 h-4 ${i < (testimonial.stars || 5) ? 'text-amber-400' : 'text-gray-200'}`}
+                                    className={`w-4 h-4 ${i < (testimonial.stars || 5) ? 'text-amber-400' : 'text-gray-200 dark:text-neutral-700'}`}
                                 />
                             ))}
                         </div>
 
-                        <p className="text-gray-700 italic mb-6 flex-grow">
+                        <p className="text-gray-700 dark:text-gray-300 italic mb-6 flex-grow">
                             &quot;{testimonial.message}&quot;
                         </p>
 
                         <div className="flex items-center gap-4 mt-auto">
                             <div>
-                                <h4 className="font-bold text-gray-900 text-sm">{testimonial.name}</h4>
-                                <p className="text-xs text-gray-500">{testimonial.role}</p>
+                                <h4 className="font-bold text-gray-900 dark:text-white text-sm">{testimonial.name}</h4>
+                                <p className="text-xs text-gray-500 dark:text-gray-400">{testimonial.role}</p>
                             </div>
                         </div>
                     </div>

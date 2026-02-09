@@ -14,12 +14,12 @@ const UnlimitedOptionBlock = () => {
         <div className="max-w-4xl mx-auto mt-12 cursor-pointer relative z-20">
             <div className="block relative group overflow-hidden rounded-3xl">
                 <div className="bg-gradient-to-r from-blue-600 to-sky-500 p-1 rounded-3xl shadow-xl transition-transform hover:scale-[1.01] duration-300">
-                    <div className="bg-white rounded-[22px] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden h-full">
+                    <div className="bg-white dark:bg-neutral-900 rounded-[22px] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden h-full">
                         <div className="relative z-10 flex-1 text-center md:text-left">
-                            <h3 className="text-2xl lg:text-3xl font-bold text-sky-600 mb-2 flex items-center justify-center md:justify-start gap-3">
+                            <h3 className="text-2xl lg:text-3xl font-bold text-sky-600 dark:text-sky-400 mb-2 flex items-center justify-center md:justify-start gap-3">
                                 🚀 Unlimited Option
                             </h3>
-                            <p className="text-gray-700 font-medium text-lg mb-2">
+                            <p className="text-gray-700 dark:text-gray-300 font-medium text-lg mb-2">
                                 Upgrade naar onbeperkt gebruik van <strong>Voice AI en alle workflows</strong>.
                             </p>
                             <p className="text-xs text-gray-400 italic max-w-2xl leading-relaxed">
@@ -28,10 +28,10 @@ const UnlimitedOptionBlock = () => {
                         </div>
 
                         <div className="relative z-10 flex flex-col items-center md:items-end flex-shrink-0">
-                            <div className="text-3xl lg:text-4xl font-extrabold text-sky-900">
+                            <div className="text-3xl lg:text-4xl font-extrabold text-sky-900 dark:text-white">
                                 € 197,-
                             </div>
-                            <div className="text-sm font-semibold text-sky-700 uppercase tracking-wide">p/m extra</div>
+                            <div className="text-sm font-semibold text-sky-700 dark:text-sky-300 uppercase tracking-wide">p/m extra</div>
                         </div>
                     </div>
                 </div>
@@ -62,18 +62,18 @@ const Pricing: React.FC = () => {
 
                 {/* Toggle Switch */}
                 <div className="flex justify-center items-center gap-4 mb-8">
-                    <span className={`text-lg font-medium ${!isAnnual ? 'text-foreground' : 'text-gray-400'}`}>Kwartaal</span>
+                    <span className={`text-lg font-medium ${!isAnnual ? 'text-foreground dark:text-white' : 'text-gray-400'}`}>Kwartaal</span>
                     <button
                         onClick={() => setIsAnnual(!isAnnual)}
-                        className={`relative w-16 h-8 rounded-full transition-colors duration-300 focus:outline-none ${isAnnual ? 'bg-primary' : 'bg-gray-300'}`}
+                        className={`relative w-16 h-8 rounded-full transition-colors duration-300 focus:outline-none ${isAnnual ? 'bg-primary' : 'bg-gray-300 dark:bg-gray-700'}`}
                     >
                         <div
                             className={`absolute top-1 left-1 bg-white w-6 h-6 rounded-full shadow-md transition-transform duration-300 ${isAnnual ? 'translate-x-8' : 'translate-x-0'}`}
                         />
                     </button>
-                    <span className={`text-lg font-medium ${isAnnual ? 'text-foreground' : 'text-gray-400'}`}>
+                    <span className={`text-lg font-medium ${isAnnual ? 'text-foreground dark:text-white' : 'text-gray-400'}`}>
                         Jaarlijks
-                        <span className="ml-2 text-xs font-bold text-green-600 bg-green-100 px-2 py-1 rounded-full border border-green-200">
+                        <span className="ml-2 text-xs font-bold text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30 px-2 py-1 rounded-full border border-green-200 dark:border-green-800">
                             Beste Keus
                         </span>
                     </span>

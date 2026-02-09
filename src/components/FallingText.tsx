@@ -250,6 +250,9 @@ const FallingText = () => {
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
 
+            const isDark = document.documentElement.classList.contains('dark');
+            const textColor = isDark ? "#ffffff" : "#000000";
+
             bodies.forEach((body) => {
                 const { x, y } = body.position;
                 const angle = body.angle;
@@ -330,7 +333,7 @@ const FallingText = () => {
                 }
 
                 // --- TEXT DRAWING (TIGHT WRAP) ---
-                ctx.fillStyle = "black";
+                ctx.fillStyle = textColor;
 
                 // Determine Safe Max Width - STRICTER
                 let maxWidth = 0;
@@ -398,17 +401,25 @@ const FallingText = () => {
 
         window.addEventListener("resize", handleResize);
 
+        // Listen for theme changes to update text color
+        const observer = new MutationObserver(() => {
+            // Trigger a re-render/update if needed, mostly handled by the render loop checking class
+        });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+
         return () => {
             Render.stop(render);
             Runner.stop(runner);
             World.clear(world, false);
             Engine.clear(engine);
             window.removeEventListener("resize", handleResize);
+            observer.disconnect();
         };
     }, [hasStarted]);
 
     return (
-        <div ref={containerRef} className="w-full h-[200px] md:h-[400px] bg-white overflow-hidden relative cursor-grab active:cursor-grabbing border-t border-gray-100 flex items-center justify-center">
+        <div ref={containerRef} className="w-full h-[200px] md:h-[400px] bg-white dark:bg-black overflow-hidden relative cursor-grab active:cursor-grabbing border-t border-gray-100 dark:border-neutral-800 flex items-center justify-center">
             <canvas ref={canvasRef} className="block w-full h-full" />
         </div>
     );

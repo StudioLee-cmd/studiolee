@@ -15,8 +15,8 @@ const FAQ: React.FC = () => {
                         <h2 className="my-3 !leading-snug lg:max-w-sm text-center lg:text-left">Veelgestelde Vragen</h2>
                     </SectionTitle>
                     {/* Contact Card */}
-                    <div className="mt-8 bg-white rounded-2xl p-6 shadow-xl border border-gray-100 text-center lg:text-left">
-                        <p className="text-gray-500 font-medium mb-2">
+                    <div className="mt-8 bg-white dark:bg-neutral-900 rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-neutral-800 text-center lg:text-left">
+                        <p className="text-gray-500 dark:text-gray-400 font-medium mb-2">
                             Staat je vraag er niet bij?
                         </p>
                         <a href="mailto:tim@studiolee.nl" className="text-xl lg:text-2xl text-primary font-bold hover:text-primary-accent transition-colors">
