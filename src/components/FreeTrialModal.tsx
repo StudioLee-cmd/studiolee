@@ -18,8 +18,6 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
         email: '',
         phone: '+31 ',
         businessName: '',
-        website: '',
-        painPoint: '',
         termsAccepted: false,
         newsletter: true,
     });
@@ -51,9 +49,8 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
         };
     }, [isOpen]);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value, type } = e.target;
-        const checked = (e.target as HTMLInputElement).checked;
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value, type, checked } = e.target;
 
         setFormData(prev => ({
             ...prev,
@@ -64,24 +61,16 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
         if (error) setError('');
     };
 
-    const submitData = async (data: typeof formData) => {
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
         // Validation
-        if (!data.fullName || !data.email || !data.businessName || !data.website) {
-            setError('Vul alle verplichte velden in (Naam, Email, Bedrijf, Website).');
+        if (!formData.fullName || !formData.email || !formData.businessName) {
+            setError('Vul alle verplichte velden in.');
             return;
         }
 
-        if (!data.email.includes('@') || !data.email.includes('.')) {
-            setError('Vul een geldig e-mailadres in.');
-            return;
-        }
-
-        if (!data.website.includes('.')) {
-            setError('Vul een geldige website URL in (moet een punt bevatten).');
-            return;
-        }
-
-        if (!data.termsAccepted) {
+        if (!formData.termsAccepted) {
             setError('Je moet akkoord gaan met de voorwaarden om door te gaan.');
             return;
         }
@@ -97,19 +86,18 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    name: data.fullName,
-                    email: data.email,
-                    phone: data.phone,
-                    business_name: data.businessName,
+                    name: formData.fullName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    business_name: formData.businessName,
                     niche: 'Loodgieter',
-                    pain_point: data.painPoint,
                     source: 'website_signup',
-                    newsletter_subscribed: data.newsletter,
+                    newsletter_subscribed: formData.newsletter,
                     interval: isAnnual ? 'Yearly' : 'Monthly'
                 }),
             });
 
-            const responseData = await response.json();
+            const data = await response.json();
 
             if (response.ok) {
                 // Success - show success message in modal
@@ -119,7 +107,7 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
                 setTimeout(() => {
                     // The webhook returns the URL in data.data
                     // We fallback to hardcoded if nothing valid is returned, just in case
-                    let redirectUrl = typeof responseData.data === 'string' ? responseData.data.trim() : '';
+                    let redirectUrl = typeof data.data === 'string' ? data.data.trim() : '';
 
                     // Check if there are quotes around it (common w/ some text responses)
                     if (redirectUrl.startsWith('"') && redirectUrl.endsWith('"')) {
@@ -128,7 +116,7 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
 
                     // Basic validation to check if it's a URL
                     if (!redirectUrl || !redirectUrl.startsWith('http')) {
-                        console.warn("Invalid or empty redirect URL from webhook, using fallback. Received:", responseData.data);
+                        console.warn("Invalid or empty redirect URL from webhook, using fallback. Received:", data.data);
                         redirectUrl = isAnnual
                             ? "https://buy.stripe.com/28E14o0HPdregor18ObjW07"
                             : "https://buy.stripe.com/28E14ocqx3QE7RV18ObjW06";
@@ -145,21 +133,6 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
         } finally {
             setIsLoading(false);
         }
-    };
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        submitData(formData);
-    };
-
-    const handleWowMe = () => {
-        const wowData = {
-            ...formData,
-            painPoint: "Verras mij! Ik weet nog niet precies wat ik nodig heb."
-        };
-        // Update state mainly for UI consistency if submission fails/lingers
-        setFormData(wowData);
-        submitData(wowData);
     };
 
     if (!isOpen) return null;
@@ -279,54 +252,20 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
                                     />
                                 </div>
 
-                                {/* Business Name & Website URL */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="businessName" className="block text-sm font-semibold text-gray-700 mb-1">
-                                            Bedrijfsnaam <span className="text-red-500">*</span>
-                                        </label>
-                                        <input
-                                            type="text"
-                                            id="businessName"
-                                            name="businessName"
-                                            required
-                                            value={formData.businessName}
-                                            onChange={handleChange}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900"
-                                            placeholder="Jouw Bedrijf"
-                                            disabled={isLoading}
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="website" className="block text-sm font-semibold text-gray-700 mb-1">
-                                            Website <span className="text-red-500">*</span>
-                                        </label>
-                                        <input
-                                            type="text"
-                                            id="website"
-                                            name="website"
-                                            required
-                                            value={formData.website}
-                                            onChange={handleChange}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900"
-                                            placeholder="www.jouwbedrijf.nl"
-                                            disabled={isLoading}
-                                        />
-                                    </div>
-                                </div>
-
-                                {/* Pain Point Field */}
+                                {/* Business Name Field */}
                                 <div>
-                                    <label htmlFor="painPoint" className="block text-sm font-semibold text-gray-700 mb-1">
-                                        Waar loop je nu tegenaan? <span className="text-gray-400 font-normal">(Optioneel)</span>
+                                    <label htmlFor="businessName" className="block text-sm font-semibold text-gray-700 mb-1">
+                                        Bedrijfsnaam <span className="text-red-500">*</span>
                                     </label>
-                                    <textarea
-                                        id="painPoint"
-                                        name="painPoint"
-                                        value={formData.painPoint}
+                                    <input
+                                        type="text"
+                                        id="businessName"
+                                        name="businessName"
+                                        required
+                                        value={formData.businessName}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900 min-h-[100px]"
-                                        placeholder="Bijv. te weinig leads, admin kost te veel tijd, etc."
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900"
+                                        placeholder="Jouw Loodgietersbedrijf"
                                         disabled={isLoading}
                                     />
                                 </div>
@@ -375,52 +314,24 @@ const FreeTrialModal: React.FC<FreeTrialModalProps> = ({ isOpen, onClose, isAnnu
                                     </div>
                                 )}
 
-                                <div className="flex flex-col gap-3">
-                                    {/* Submit Button */}
-                                    <button
-                                        type="submit"
-                                        disabled={isLoading}
-                                        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-200 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-lg shadow-lg"
-                                    >
-                                        {isLoading ? (
-                                            <span className="flex items-center justify-center">
-                                                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                                </svg>
-                                                Even geduld...
-                                            </span>
-                                        ) : (
-                                            'Start Mijn Gratis Proefperiode'
-                                        )}
-                                    </button>
-
-                                    {/* "Just Wow Me" Button */}
-                                    <button
-                                        type="button"
-                                        onClick={() => {
-                                            setFormData(prev => ({ ...prev, painPoint: "Verras mij! Ik weet nog niet precies wat ik nodig heb." }));
-                                            // Programmatically submit the form (we need to trigger validation though)
-                                            // Best way is to set the value, then let the user click submit or trigger submit manually
-                                            // But standard behavior for "Just Wow Me" implies a 1-click action if fields are filled.
-                                            // Let's make it submit.
-                                            // Since handle submit is attached to form, we can just call it if we mock the event or extract logic.
-                                            // Easier: just set the value and maybe show a toast or highlight the submit button? 
-                                            // Or better: pass a flag to handleSubmit? 
-                                            // Let's keep it simple: Click fills the textarea and user clicks submit? No, that's weak.
-                                            // A button type="submit" with a specific name/value?
-                                            // Let's create a separate handler for this button.
-
-                                            // Actually, let's just make it a secondary submit button that sets the painPoint before submitting if empty.
-                                            // But react state updates are async.
-                                            // Let's just create a handleWowMe function.
-                                        }}
-                                        disabled={isLoading}
-                                        className="w-full bg-white text-blue-600 font-bold py-3 px-6 rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-200 text-center"
-                                    >
-                                        ✨ Ik weet het nog niet, verras mij!
-                                    </button>
-                                </div>
+                                {/* Submit Button */}
+                                <button
+                                    type="submit"
+                                    disabled={isLoading}
+                                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-200 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none text-lg shadow-lg"
+                                >
+                                    {isLoading ? (
+                                        <span className="flex items-center justify-center">
+                                            <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg>
+                                            Even geduld, je account wordt aangemaakt...
+                                        </span>
+                                    ) : (
+                                        'Start Mijn Gratis Proefperiode'
+                                    )}
+                                </button>
                             </form>
 
                             {/* Trust Badges */}

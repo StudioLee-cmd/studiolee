@@ -8,6 +8,7 @@ import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 import Container from './Container';
 import FreeTrialModal from './FreeTrialModal';
 import ShinyText from './ShinyText';
+import { AnimatedThemeToggler } from './AnimatedThemeToggler';
 import { siteDetails } from '@/data/siteDetails';
 import { menuItems } from '@/data/menuItems';
 
@@ -36,10 +37,10 @@ const Header: React.FC = () => {
                     </div>
 
                     {/* Desktop Menu (Center) */}
-                    <ul className="hidden lg:flex flex-grow justify-center space-x-10">
+                    <ul className="hidden lg:flex flex-grow justify-center space-x-10 pl-20">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-gray-600 hover:text-primary font-medium transition-colors text-base">
+                                <Link href={item.url} className="text-gray-600 hover:text-primary font-medium transition-colors text-base dark:text-gray-300 dark:hover:text-primary">
                                     {item.text}
                                 </Link>
                             </li>
@@ -48,19 +49,21 @@ const Header: React.FC = () => {
 
                     {/* CTA Button (Right) */}
                     <div className="hidden md:flex items-center gap-6 flex-shrink-0">
-                        <Link href="/login" className="text-gray-600 font-medium hover:text-primary transition-colors hidden lg:block">
+                        <AnimatedThemeToggler />
+                        <Link href="/login" className="text-gray-600 font-medium hover:text-primary transition-colors hidden lg:block dark:text-gray-300 dark:hover:text-primary">
                             Inloggen
                         </Link>
                         <button
                             onClick={() => document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' })}
                             className="text-white bg-primary hover:bg-secondary px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
                         >
-                            <ShinyText text="Plan Een Gesprek" speed={3} color="#ffffff" shineColor="#60a5fa" />
+                            <ShinyText text="Plan Een Gesprek" speed={3} color="#ffffff" shineColor="var(--primary-accent)" />
                         </button>
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <div className="lg:hidden flex items-center">
+                    <div className="lg:hidden flex items-center gap-4">
+                        <AnimatedThemeToggler />
                         <button
                             onClick={toggleMenu}
                             type="button"
@@ -81,7 +84,7 @@ const Header: React.FC = () => {
 
             {/* Mobile Menu (Instant, no animation) */}
             {isOpen && (
-                <div id="mobile-menu" className="md:hidden bg-white shadow-lg border-t border-gray-100 absolute w-full left-0 z-50">
+                <div id="mobile-menu" className="md:hidden bg-white dark:bg-neutral-900 shadow-lg border-t border-gray-100 dark:border-neutral-800 absolute w-full left-0 z-50">
                     <ul className="flex flex-col space-y-4 py-6 px-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
