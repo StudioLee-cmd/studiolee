@@ -22,8 +22,8 @@
 .dark {
   --background: #09090b;
   /* Zinc 950 - Almost Black */
-  --foreground: #fafafa;
-  /* Zinc 50 */
+  --foreground: #e0e7ff;
+  /* Indigo 100 - Light blue tint for readability */
 
   --primary: #f97316;
   /* Orange 500 */
@@ -32,8 +32,8 @@
 
   --primary-accent: #fb923c;
   /* Orange 400 */
-  --foreground-accent: #a1a1aa;
-  /* Zinc 400 */
+  --foreground-accent: #c7d2fe;
+  /* Indigo 200 - Lighter blue-gray */
 
   --hero-background: #000000;
   /* Pure Black */
