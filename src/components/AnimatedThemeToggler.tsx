@@ -51,6 +51,7 @@ export function AnimatedThemeToggler() {
                 {
                     duration: 500,
                     easing: "ease-in-out",
+                    fill: "forwards",
                     pseudoElement: isDark
                         ? "::view-transition-old(root)"
                         : "::view-transition-new(root)",
