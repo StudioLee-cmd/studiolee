@@ -90,3 +90,21 @@ h6 {
   animation: none;
   mix-blend-mode: normal;
 }
+
+/* When switching to dark mode, new (dark) layer should be on top */
+.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+.dark::view-transition-old(root) {
+  z-index: -1;
+}
+
+/* When switching to light mode, old (dark) layer should be on top */
+:root:not(.dark)::view-transition-new(root) {
+  z-index: -1;
+}
+
+:root:not(.dark)::view-transition-old(root) {
+  z-index: 1;
+}
