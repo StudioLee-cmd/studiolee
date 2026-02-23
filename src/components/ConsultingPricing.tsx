@@ -133,6 +133,15 @@ const ConsultingPricing = () => {
                     * Prijzen exclusief btw. Factuur wordt automatisch verzonden.
                 </p>
 
+                <div className="flex justify-center mt-8">
+                    <a
+                        href="/tarieven"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary/10 text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300 border border-primary/20 hover:border-primary"
+                    >
+                        Bekijk alle tarieven <BsArrowRight />
+                    </a>
+                </div>
+
                 <ConsultingFormModal
                     isOpen={isModalOpen}
                     onClose={() => setIsModalOpen(false)}
