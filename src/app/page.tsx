@@ -10,6 +10,7 @@ import YouTubeSection from "@/components/YouTubeSection";
 import Services from "@/components/Services";
 import ConsultingPricing from "@/components/ConsultingPricing";
 import FallingText from "@/components/FallingText";
+import AIExpertSection from "@/components/AIExpertSection";
 
 const HomePage: React.FC = () => {
   return (
@@ -18,7 +19,10 @@ const HomePage: React.FC = () => {
 
       <YouTubeSection />
 
+      <AIExpertSection />
+
       <Services />
+
 
       <ConsultingPricing />
 

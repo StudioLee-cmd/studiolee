@@ -6,6 +6,10 @@ export const faqs: IFAQ[] = [
         answer: "Nee, wij fungeren als uw externe AI-afdeling. Wij ontwerpen, bouwen en beheren de volledige technische infrastructuur. U profiteert van de efficiëntie, zonder dat u of uw team nieuwe complexe tools hoeft te leren.",
     },
     {
+        question: "Is het 100% AI of zit er ook een mens achter?",
+        answer: "Wij zijn AI-first, maar altijd met een expert human-in-the-loop. AI zonder senior vakkennis in SEO, CRO, web development of marketing levert middelmatige resultaten — je moet de AI de juiste kant op sturen. Onze specialisten hebben alle frameworks al uitgewerkt en sturen de AI aan met jarenlange ervaring. Wij automatiseren 100% alleen waar het bewezen werkt. Daarom kunnen wij ook garanties op maat bieden en zijn wij altijd eerlijk over de haalbaarheid.",
+    },
+    {
         question: "Welke bedrijfsprocessen kunnen worden geautomatiseerd?",
         answer: "Vrijwel elk repetitief proces dat data, communicatie of administratie betreft. Van end-to-end lead nurturing en klantenservice tot complexe financiële rapportages en operationele planning. Wij bouwen maatwerkoplossingen die naadloos integreren met uw huidige softwarelandschap.",
     },

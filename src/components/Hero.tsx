@@ -71,8 +71,8 @@ const Hero: React.FC = () => {
                 </h1>
 
                 <p className="mt-8 text-base sm:text-lg md:text-2xl text-gray-500 dark:text-slate-300 max-w-3xl mx-auto font-medium leading-relaxed">
-                    STUDIOLEE maakt werken met AI, marketing en automatisering 10x makkelijker.
-                    Wij geven ondernemers meer kracht en efficiëntie.
+                    AI-powered, expert-driven. Wij combineren slimme automatisering met senior vakkennis
+                    voor resultaat waar je op kunt bouwen.
                 </p>
 
                 <div className="flex flex-col items-center justify-center gap-4 mt-12 mb-20">
