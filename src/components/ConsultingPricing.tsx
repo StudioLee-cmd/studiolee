@@ -1,12 +1,25 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Section from './Section';
 import Container from './Container';
 import { BsArrowRight, BsCameraVideo, BsLightningCharge } from 'react-icons/bs';
 import ShinyText from './ShinyText';
+import ConsultingFormModal from './ConsultingFormModal';
 
 const ConsultingPricing = () => {
-    const [loading, setLoading] = React.useState<string | null>(null);
+    const [loading, setLoading] = useState<string | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedType, setSelectedType] = useState<'laser' | 'roadmap'>('laser');
+
+    const handleOpenModal = (type: 'laser' | 'roadmap') => {
+        setSelectedType(type);
+        setIsModalOpen(true);
+    };
+
+    const handleFormSuccess = () => {
+        setIsModalOpen(false);
+        handlePayment(selectedType);
+    };
 
     const handlePayment = async (type: 'laser' | 'roadmap') => {
         setLoading(type);
@@ -64,7 +77,7 @@ const ConsultingPricing = () => {
                             </p>
 
                             <button
-                                onClick={() => handlePayment('laser')}
+                                onClick={() => handleOpenModal('laser')}
                                 disabled={loading === 'laser'}
                                 className="flex items-center justify-center w-full py-4 rounded-xl bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
@@ -94,7 +107,7 @@ const ConsultingPricing = () => {
                             </p>
 
                             <button
-                                onClick={() => handlePayment('roadmap')}
+                                onClick={() => handleOpenModal('roadmap')}
                                 disabled={loading === 'roadmap'}
                                 className="flex items-center justify-center w-full py-4 rounded-xl bg-white text-gray-900 font-bold hover:bg-gray-100 transition-colors gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                             >
@@ -104,14 +117,14 @@ const ConsultingPricing = () => {
                     </div>
                 </div>
 
-                <div className="max-w-3xl mx-auto bg-yellow-50 border border-yellow-100 rounded-2xl p-6 text-yellow-900 text-sm text-center">
+                <div className="max-w-3xl mx-auto bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-100 dark:border-yellow-900/30 rounded-2xl p-6 text-yellow-900 dark:text-yellow-100 text-sm text-center">
                     <p className="font-bold mb-2">📅 Let op: Agenda & Voorbereiding</p>
                     <p>
                         Ik heb <strong>minimaal 7 dagen</strong> nodig om me in te lezen in jouw situatie.
-                        Na betaling ontvang je direct de link naar mijn agenda om een moment te kiezen (minimaal 7 dagen in de toekomst).
+                        Na betaling ontvang je direct the link naar mijn agenda om een moment te kiezen (minimaal 7 dagen in de toekomst).
                     </p>
-                    <p className="mt-3 text-yellow-700 italic">
-                        Spoedklus (morgen)? Mail naar <a href="mailto:tim@studiolee.nl" className="underline font-semibold">tim@studiolee.nl</a>.
+                    <p className="mt-3 text-yellow-700 dark:text-yellow-400/80 italic">
+                        Spoedklus (morgen)? Mail naar <a href="mailto:tim@studiolee.nl" className="underline font-semibold text-yellow-800 dark:text-yellow-300">tim@studiolee.nl</a>.
                         We kijken of er plek is (toeslag van toepassing).
                     </p>
                 </div>
@@ -119,6 +132,13 @@ const ConsultingPricing = () => {
                 <p className="text-center text-gray-400 mt-8 text-xs">
                     * Prijzen exclusief btw. Factuur wordt automatisch verzonden.
                 </p>
+
+                <ConsultingFormModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    onSuccess={handleFormSuccess}
+                    callType={selectedType}
+                />
             </Container>
         </Section>
     );

@@ -13,6 +13,7 @@
     "@mollie/api-client": "^4.4.0",
     "@next/third-parties": "^14.2.13",
     "@vapi-ai/web": "^2.5.2",
+    "@vercel/analytics": "^1.6.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.9",
     "gsap": "^3.14.2",

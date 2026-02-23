@@ -22,7 +22,7 @@ const CostComparison: React.FC = () => {
                     <div className="relative">
                         <ComparisonTable items={comparisonData} />
                         <div className="mt-4 text-center lg:text-right">
-                            <p className="text-gray-500 font-medium">Totaal per maand:</p>
+                            <p className="text-gray-500 dark:text-gray-400 font-medium">Totaal per maand:</p>
                             <p className="text-3xl font-bold text-gray-400 line-through decoration-red-500 decoration-4">€ {totalTraditionalCost},-</p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const CostComparison: React.FC = () => {
                     {/* STUDIOLEE Way */}
                     <Link href="#consulting" className="block w-full">
                         <div
-                            className="bg-foreground text-white rounded-3xl p-8 lg:p-12 relative overflow-hidden shadow-2xl cursor-pointer hover:scale-[1.01] transition-transform"
+                            className="bg-gray-900 text-white rounded-3xl p-8 lg:p-12 relative overflow-hidden shadow-2xl cursor-pointer hover:scale-[1.01] transition-transform"
                         >
                             <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-primary opacity-20 rounded-full blur-3xl"></div>
                             <div className="absolute bottom-0 left-0 -mb-10 -ml-10 w-40 h-40 bg-secondary opacity-20 rounded-full blur-3xl"></div>

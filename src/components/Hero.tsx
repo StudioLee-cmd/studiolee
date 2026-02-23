@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { heroDetails } from '@/data/hero';
-import FreeTrialModal from './FreeTrialModal';
+import AIScanModal from './AIScanModal';
 import LogoLoop from './LogoLoop';
 import Antigravity from './Antigravity';
 
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
         >
             <div className="text-center relative z-10 max-w-6xl mx-auto w-full overflow-x-hidden px-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 mb-8">
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Jouw Groeipartner</span>
+                    <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">jouw groeipartner voor het ai tijdperk</span>
                 </div>
 
                 <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl font-black font-heading text-gray-900 dark:text-slate-200 tracking-tight leading-[1.1] mb-8">
@@ -75,13 +75,16 @@ const Hero: React.FC = () => {
                     Wij geven ondernemers meer kracht en efficiëntie.
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12 mb-20">
+                <div className="flex flex-col items-center justify-center gap-4 mt-12 mb-20">
                     <button
-                        onClick={() => document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' })}
+                        onClick={() => setIsModalOpen(true)}
                         className="px-12 py-5 rounded-full bg-primary text-white text-xl font-bold hover:bg-secondary transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 transform duration-300 ring-4 ring-primary/20"
                     >
-                        Start met STUDIOLEE
+                        Start Gratis AI Business Scan
                     </button>
+                    <p className="text-sm text-gray-400 dark:text-gray-500 mt-2">
+                        Ontvang binnen 2 minuten een AI-gegenereerde blauwdruk. Gratis &amp; direct resultaat.
+                    </p>
                 </div>
 
                 <div className="absolute inset-0 w-full h-full -z-10 opacity-50 pointer-events-none">
@@ -141,14 +144,13 @@ const Hero: React.FC = () => {
                             hoverSpeed={0}
                             scaleOnHover
                             fadeOut
-                            fadeOutColor="#ffffff"
                         />
                     </div>
                 </div>
 
             </div>
 
-            <FreeTrialModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} isAnnual={false} />
+            <AIScanModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section >
     );
 };

@@ -75,7 +75,7 @@ const PricingColumn: React.FC<Props> = ({ tier, highlight, isAnnual, onStartTria
                 {hasSlider && (
                     <div className="mb-6">
                         {/* Slider implementation kept if needed */}
-                        <label htmlFor="minutes-slider" className="block text-sm font-medium text-gray-700 mb-2">
+                        <label htmlFor="minutes-slider" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                             Aantal Belminuten: <span className="font-bold text-primary">{minutes}</span>
                         </label>
                         <input

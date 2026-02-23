@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import FloatingPhone from "@/components/FloatingPhone";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { siteDetails } from '@/data/siteDetails';
+import { Analytics } from "@vercel/analytics/next";
+
 
 import "./globals.css";
 
@@ -67,7 +69,9 @@ export default function RootLayout({
           <Footer />
           <FloatingPhone />
         </ThemeProvider>
+        <Analytics />
       </body>
+
     </html>
   );
 }

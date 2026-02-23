@@ -39,16 +39,15 @@ const HomePage: React.FC = () => {
               'stukadoorai.nl', 'schilderai.nl', 'elektroai.nl', 'reparatieai.nl',
               'verhuizerai.nl', 'kliniekai.nl', 'dierenartsai.nl', 'rijschoolai.nl',
               'tafelai.nl', 'hovenierai.nl', 'fietsenai.nl', 'woningai.nl',
-              'huisartsenai.nl', 'aireclamestudio.nl', 'lazyaiads.com',
-              'lazyaicontent.com', 'lazysocials.com', 'lazyaiautomations.com',
-              'lazyaivoice.com', 'lazybacklinks.com', 'lazyaiseo.com', 'vertaalai.nl'
+              'huisartsenai.nl', 'aireclamestudio.nl', 'lazyaicontent.com',
+              'vertaalai.nl'
             ].map((domain) => (
               <a
                 key={domain}
                 href={`https://${domain}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-gray-100 rounded-full text-sm font-medium text-gray-600 hover:bg-primary hover:text-white transition-colors"
+                className="px-4 py-2 bg-gray-100 dark:bg-neutral-800 rounded-full text-sm font-medium text-gray-600 dark:text-neutral-300 hover:bg-primary dark:hover:bg-primary hover:text-white dark:hover:text-white transition-colors"
               >
                 {domain}
               </a>

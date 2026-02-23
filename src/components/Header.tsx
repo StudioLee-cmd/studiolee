@@ -50,9 +50,6 @@ const Header: React.FC = () => {
                     {/* CTA Button (Right) */}
                     <div className="hidden md:flex items-center gap-6 flex-shrink-0">
                         <AnimatedThemeToggler />
-                        <Link href="/login" className="text-gray-600 font-medium hover:text-primary transition-colors hidden lg:block dark:text-gray-300 dark:hover:text-primary">
-                            Inloggen
-                        </Link>
                         <button
                             onClick={() => document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' })}
                             className="text-white bg-primary hover:bg-secondary px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
