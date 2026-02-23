@@ -15,7 +15,7 @@ export async function POST(request: Request) {
 
         // Forward to n8n webhook
         const webhookResponse = await fetch(
-            'https://n8n.aireclamestudio.nl/webhook/webhook/sales-deck',
+            'https://n8n.aireclamestudio.nl/webhook/free-scan',
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
