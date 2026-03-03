@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 
 import Container from './Container';
@@ -15,9 +16,20 @@ import { menuItems } from '@/data/menuItems';
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const pathname = usePathname();
+    const router = useRouter();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+    };
+
+    const handlePlanClick = (closeMenu?: () => void) => {
+        if (pathname === '/') {
+            document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            router.push('/#consulting');
+        }
+        closeMenu?.();
     };
 
     return (
@@ -51,7 +63,7 @@ const Header: React.FC = () => {
                     <div className="hidden md:flex items-center gap-6 flex-shrink-0">
                         <AnimatedThemeToggler />
                         <button
-                            onClick={() => document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => handlePlanClick()}
                             className="text-white bg-primary hover:bg-secondary px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
                         >
                             <ShinyText text="Plan Een Gesprek" speed={3} color="#ffffff" shineColor="var(--primary-accent)" />
@@ -92,10 +104,7 @@ const Header: React.FC = () => {
                         ))}
                         <li className="pt-2">
                             <button
-                                onClick={() => {
-                                    document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' });
-                                    toggleMenu();
-                                }}
+                                onClick={() => handlePlanClick(toggleMenu)}
                                 className="w-full text-white bg-primary hover:bg-primary-accent px-5 py-3 rounded-xl font-bold text-center block"
                             >
                                 Start Gratis

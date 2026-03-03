@@ -8,7 +8,7 @@ import FloatingPhone from "@/components/FloatingPhone";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { siteDetails } from '@/data/siteDetails';
 import { Analytics } from "@vercel/analytics/next";
-
+import { organizationSchema, websiteSchema } from '@/utils/schema';
 
 import "./globals.css";
 
@@ -51,11 +51,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="nl">
       <body
         className={`${manrope.className} ${sourceSans.className} ${outfit.variable} ${caveat.variable} antialiased`}
       >
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

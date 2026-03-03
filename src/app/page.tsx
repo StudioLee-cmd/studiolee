@@ -11,10 +11,20 @@ import Services from "@/components/Services";
 import ConsultingPricing from "@/components/ConsultingPricing";
 import FallingText from "@/components/FallingText";
 import AIExpertSection from "@/components/AIExpertSection";
+import { faqs } from "@/data/faq";
+import { faqPageSchema, breadcrumbSchema } from "@/utils/schema";
 
 const HomePage: React.FC = () => {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema(faqs)) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: 'Home', url: 'https://studiolee.nl' }])) }}
+      />
       <Hero />
 
       <YouTubeSection />
@@ -43,7 +53,7 @@ const HomePage: React.FC = () => {
               'stukadoorai.nl', 'schilderai.nl', 'elektroai.nl', 'reparatieai.nl',
               'verhuizerai.nl', 'kliniekai.nl', 'dierenartsai.nl', 'rijschoolai.nl',
               'tafelai.nl', 'hovenierai.nl', 'fietsenai.nl', 'woningai.nl',
-              'huisartsenai.nl', 'aireclamestudio.nl', 'lazyaicontent.com',
+              'huisartsenai.nl', 'aireclamestudio.nl', 'lazyaitravel.com',
               'vertaalai.nl'
             ].map((domain) => (
               <a

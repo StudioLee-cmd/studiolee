@@ -5,6 +5,7 @@ import { BsArrowRight, BsLightningCharge, BsCameraVideo, BsRocket, BsTools, BsHe
 import ShinyText from '@/components/ShinyText';
 import ConsultingFormModal from '@/components/ConsultingFormModal';
 import Link from 'next/link';
+import { serviceOfferSchema, breadcrumbSchema } from '@/utils/schema';
 
 const pricingTiers = [
     {
@@ -108,8 +109,25 @@ const TarievenPage = () => {
         }
     };
 
+    const services = pricingTiers.map(tier => ({
+        name: tier.name,
+        description: tier.description,
+        ...(tier.price !== 'Op aanvraag' && { price: tier.price.replace('€', '').replace('.', '') }),
+    }));
+
     return (
         <main className="pt-28 pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceOfferSchema(services)) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+                    { name: 'Home', url: 'https://studiolee.nl' },
+                    { name: 'Tarieven', url: 'https://studiolee.nl/tarieven' },
+                ])) }}
+            />
             <Container>
                 {/* Header */}
                 <div className="text-center mb-16">

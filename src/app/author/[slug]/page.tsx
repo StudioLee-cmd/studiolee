@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { FiMail, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { personSchema, breadcrumbSchema } from '@/utils/schema';
 
 export async function generateStaticParams() {
     return authors.map((author) => ({
@@ -40,6 +41,17 @@ export default async function AuthorPage({ params }: { params: Promise<{ slug: s
 
     return (
         <div className="min-h-screen bg-hero-background">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema(author)) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([
+                    { name: 'Home', url: 'https://studiolee.nl' },
+                    { name: author.name, url: `https://studiolee.nl/author/${author.slug}` },
+                ])) }}
+            />
             {/* Author Header */}
             <div className="max-w-4xl mx-auto px-5 py-20">
                 <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-black/5">
