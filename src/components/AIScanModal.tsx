@@ -204,7 +204,8 @@ const AIScanModal: React.FC<AIScanModalProps> = ({ isOpen, onClose }) => {
                                         name="websiteUrl"
                                         required
                                         value={formData.websiteUrl}
-                                        onChange={handleChange}
+                                        onChange={(e) => { e.target.setCustomValidity(''); handleChange(e); }}
+                                        onInvalid={(e) => (e.target as HTMLInputElement).setCustomValidity('URL is ongeldig. Als je (nog) geen website hebt, vul een Facebook URL in en leg je situatie uit in het berichtveld.')}
                                         className="w-full px-4 py-3 border border-gray-300 dark:border-neutral-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none text-gray-900 dark:text-white dark:bg-neutral-800"
                                         placeholder="https://jouwwebsite.nl"
                                         disabled={isLoading}
