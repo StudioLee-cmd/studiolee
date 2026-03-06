@@ -136,9 +136,21 @@ const AIScanModal: React.FC<AIScanModalProps> = ({ isOpen, onClose }) => {
                             <p className="text-gray-600 dark:text-gray-300 mb-4">
                                 We analyseren <strong>{formData.websiteUrl}</strong> en sturen je blauwdruk naar <strong>{formData.email}</strong>.
                             </p>
-                            <p className="text-gray-500 dark:text-gray-400 text-sm mb-8">
+                            <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">
                                 Je ontvangt binnen 2 minuten een e-mail met je persoonlijke AI Business Scan rapport.
                             </p>
+                            {/* Video while waiting */}
+                            <div className="aspect-video bg-black rounded-lg overflow-hidden mb-6">
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/3RaBKCJdLMA?autoplay=1&mute=1"
+                                    title="Waiting Room Video"
+                                    style={{ border: 0 }}
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
                             <button
                                 onClick={onClose}
                                 className="inline-block w-full bg-primary text-white font-bold py-4 px-6 rounded-lg hover:opacity-90 transition-all shadow-lg"
