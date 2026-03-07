@@ -100,7 +100,7 @@ Resultaten die we zien bij onze klanten:
 - 3–5x meer Google-reviews door geautomatiseerde opvolging
 - Uren per week bespaard op handmatig klantcontact
 
-**Benieuwd wat AI-agenten voor jouw bedrijf kunnen betekenen?** Plan een gratis intake via studiolee.nl.
+**Benieuwd wat AI-agenten voor jouw bedrijf kunnen betekenen?** Plan een gratis intake via [studiolee.nl](https://www.studiolee.nl).
 
 ---
 
