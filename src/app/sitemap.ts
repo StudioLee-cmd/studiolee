@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.studiolee.nl'
 
     // Static routes — rarely change
-    const staticPages = ['', '/gratis-scan', '/review-pakket', '/privacy', '/legal', '/algemene-voorwaarden']
+    const staticPages = ['', '/privacy', '/legal', '/algemene-voorwaarden']
     const staticRoutes = staticPages.map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
