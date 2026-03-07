@@ -223,7 +223,9 @@ const TarievenPage = () => {
 
                             {/* CTA */}
                             <a
-                                href="mailto:tim@studiolee.nl"
+                                href="https://calendly.com/tim-studiolee"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className={`flex items-center justify-center w-full py-4 rounded-xl font-bold transition-all gap-2 ${tier.highlighted
                                         ? 'bg-white text-gray-900 hover:bg-gray-100'
                                         : 'bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100'
