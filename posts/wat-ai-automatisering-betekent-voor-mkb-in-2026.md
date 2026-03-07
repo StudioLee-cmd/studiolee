@@ -52,4 +52,4 @@ Het loont om hier actief naar te zoeken voordat je een AI-tool aanschaft.
 
 Ondernemers die nu met AI starten, bouwen een voorsprong op die over 2–3 jaar moeilijk in te halen is. De investering is laag, de terugverdientijd kort en de impact op groei, efficiëntie en klanttevredenheid is direct meetbaar.
 
-StudioLee helpt MKB-ondernemers in elke branche met het implementeren van AI-automatisering. Ontdek wat we voor jou kunnen doen op [studiolee.nl](https://studiolee.nl).
+StudioLee helpt MKB-ondernemers in elke branche met het implementeren van AI-automatisering. Ontdek wat we voor jou kunnen doen op [studiolee.nl](https://www.studiolee.nl).
