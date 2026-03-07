@@ -28,7 +28,7 @@ const CostComparison: React.FC = () => {
                     </div>
 
                     {/* STUDIOLEE Way */}
-                    <Link href="#consulting" className="block w-full">
+                    <Link href="/#consulting" className="block w-full">
                         <div
                             className="bg-gray-900 text-white rounded-3xl p-8 lg:p-12 relative overflow-hidden shadow-2xl cursor-pointer hover:scale-[1.01] transition-transform"
                         >

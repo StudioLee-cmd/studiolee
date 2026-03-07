@@ -15,11 +15,11 @@ export const footerDetails: {
     quickLinks: [
         {
             text: "Tarieven",
-            url: "#consulting"
+            url: "/#consulting"
         },
         {
             text: "Ervaringen",
-            url: "#testimonials"
+            url: "/#testimonials"
         },
         {
             text: "Blog",
