@@ -122,6 +122,21 @@ export default function BlogContent({ content }: BlogContentProps) {
                 .blog-content blockquote p:last-child {
                     margin-bottom: 0;
                 }
+                .blog-content a {
+                    color: #2563eb;
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                    transition: color 0.2s;
+                }
+                .blog-content a:hover {
+                    color: #1d4ed8;
+                }
+                .dark .blog-content a {
+                    color: #f97316;
+                }
+                .dark .blog-content a:hover {
+                    color: #fb923c;
+                }
             `}</style>
             <div
                 className="blog-content"
