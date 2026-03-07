@@ -78,4 +78,4 @@ AI is geen buzzword meer — het is een praktisch hulpmiddel dat MKB-bedrijven �
 - **Boekhouding?** Moneybird is de standaard — simpel en betaalbaar.
 - **Compleet systeem zonder gedoe?** [StudioLee](/) bouwt een AI-systeem op maat: telefoon, chatbot, reviews, marketing en vindbaarheid — alles in één, zodat jij je kunt focussen op je vak.
 
-Benieuwd wat StudioLee voor jouw bedrijf kan betekenen? [Plan een gratis AI Business Scan](/contact).
+Benieuwd wat StudioLee voor jouw bedrijf kan betekenen? [Plan een gratis AI Business Scan](https://calendly.com/tim-studiolee).
