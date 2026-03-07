@@ -9,7 +9,7 @@ export const siteDetails = {
     locale: 'nl-NL',
     siteLogo: `${process.env.BASE_PATH || ''}/images/brand/logo-header-v2.png`,
     siteLogoFooter: `${process.env.BASE_PATH || ''}/images/brand/logo-footer-v2.png`,
-    googleAnalyticsId: '',
+    googleAnalyticsId: 'G-15R383K0ED',
     nicheDomains: [
         'kapperai.nl',
         'loodgieterai.nl',
