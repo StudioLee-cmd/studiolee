@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Container from '@/components/Container';
 
 // N8N Webhook URL - Replace with your actual webhook URL
-const N8N_WEBHOOK_URL = "JOUW_N8N_WEBHOOK_URL_HIER";
+const N8N_WEBHOOK_URL = "https://n8n.aireclamestudio.nl/webhook/free-scan";
 
 const NICHE_OPTIONS = [
     "Restaurants",
