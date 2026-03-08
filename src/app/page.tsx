@@ -58,7 +58,7 @@ const HomePage: React.FC = () => {
             ].map((domain) => (
               <a
                 key={domain}
-                href={`https://${domain}`}
+                href={`https://www.${domain}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 bg-gray-100 dark:bg-neutral-800 rounded-full text-sm font-medium text-gray-600 dark:text-neutral-300 hover:bg-primary dark:hover:bg-primary hover:text-white dark:hover:text-white transition-colors"
