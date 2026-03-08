@@ -21,7 +21,7 @@ AI is geen buzzword meer — het is een praktisch hulpmiddel dat MKB-bedrijven �
 
 ## ChatGPT — de bekendste AI-assistent
 
-<a href="https://chat.openai.com" rel="nofollow">ChatGPT</a> (OpenAI) is de meest gebruikte AI-tool ter wereld. Teksten schrijven, e-mails beantwoorden, ideeën brainstormen — het kan bijna alles.
+<a href="https://chatgpt.com" rel="nofollow">ChatGPT</a> (OpenAI) is de meest gebruikte AI-tool ter wereld. Teksten schrijven, e-mails beantwoorden, ideeën brainstormen — het kan bijna alles.
 
 **Sterkste punt:** Veelzijdig. Van klantenservice tot marketing tot administratie — ChatGPT kan overal mee helpen. Gratis basisversie beschikbaar.
 
@@ -57,7 +57,7 @@ AI is geen buzzword meer — het is een praktisch hulpmiddel dat MKB-bedrijven �
 
 **Nadeel:** Het is een managed service — je betaalt voor het complete systeem, niet voor losse tools. Minder geschikt als je zelf alles wilt configureren.
 
-**Geschikt voor:** MKB-bedrijven die willen groeien met AI zonder er zelf tijd in te steken. [Bekijk wat StudioLee kan](/diensten).
+**Geschikt voor:** MKB-bedrijven die willen groeien met AI zonder er zelf tijd in te steken. [Bekijk wat StudioLee kan](/tarieven).
 
 ## Vergelijking: welke AI-tool past bij jou?
 
