@@ -4,6 +4,7 @@ import Container from '@/components/Container';
 import { BsArrowRight, BsLightningCharge, BsCameraVideo, BsRocket, BsTools, BsHeadset } from 'react-icons/bs';
 import ShinyText from '@/components/ShinyText';
 import ConsultingFormModal from '@/components/ConsultingFormModal';
+import FreeTrialModal from '@/components/FreeTrialModal';
 import Link from 'next/link';
 import { serviceOfferSchema, breadcrumbSchema } from '@/utils/schema';
 
@@ -12,7 +13,7 @@ const pricingTiers = [
         id: 'saas',
         name: 'AI SaaS',
         subtitle: 'Volledig DIY',
-        price: '€79',
+        price: '\u20ac79',
         priceSuffix: '/m',
         pricePrefix: 'Vanaf',
         description: 'Toegang tot het platform, tickets & feature requests.',
@@ -24,14 +25,14 @@ const pricingTiers = [
             'Feature requests indienen',
             'Maandelijks opzegbaar',
         ],
-        cta: 'Start Nu',
+        cta: 'Start Gratis',
         highlighted: false,
     },
     {
         id: 'build',
         name: 'One-Time Build',
         subtitle: 'Custom Build-out',
-        price: '€1.000',
+        price: '\u20ac1.000',
         priceSuffix: '',
         pricePrefix: 'Vanaf',
         description: 'Geen maandelijkse kosten. Betaal alleen voor gebruik (Vapi/OpenAI).',
@@ -70,6 +71,7 @@ const pricingTiers = [
 const TarievenPage = () => {
     const [loading, setLoading] = useState<string | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
     const [selectedType, setSelectedType] = useState<'laser' | 'roadmap'>('laser');
 
     const handleOpenModal = (type: 'laser' | 'roadmap') => {
@@ -112,7 +114,7 @@ const TarievenPage = () => {
     const services = pricingTiers.map(tier => ({
         name: tier.name,
         description: tier.description,
-        ...(tier.price !== 'Op aanvraag' && { price: tier.price.replace('€', '').replace('.', '') }),
+        ...(tier.price !== 'Op aanvraag' && { price: tier.price.replace('\u20ac', '').replace('.', '') }),
     }));
 
     return (
@@ -222,17 +224,29 @@ const TarievenPage = () => {
                             </ul>
 
                             {/* CTA */}
-                            <a
-                                href="https://calendly.com/tim-studiolee"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`flex items-center justify-center w-full py-4 rounded-xl font-bold transition-all gap-2 ${tier.highlighted
-                                        ? 'bg-white text-gray-900 hover:bg-gray-100'
-                                        : 'bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100'
-                                    }`}
-                            >
-                                {tier.cta} <BsArrowRight />
-                            </a>
+                            {tier.id === 'saas' ? (
+                                <button
+                                    onClick={() => setIsSignupModalOpen(true)}
+                                    className={`flex items-center justify-center w-full py-4 rounded-xl font-bold transition-all gap-2 ${tier.highlighted
+                                            ? 'bg-white text-gray-900 hover:bg-gray-100'
+                                            : 'bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100'
+                                        }`}
+                                >
+                                    {tier.cta} <BsArrowRight />
+                                </button>
+                            ) : (
+                                <a
+                                    href="https://calendly.com/tim-studiolee"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`flex items-center justify-center w-full py-4 rounded-xl font-bold transition-all gap-2 ${tier.highlighted
+                                            ? 'bg-white text-gray-900 hover:bg-gray-100'
+                                            : 'bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100'
+                                        }`}
+                                >
+                                    {tier.cta} <BsArrowRight />
+                                </a>
+                            )}
                         </div>
                     ))}
                 </div>
@@ -257,7 +271,7 @@ const TarievenPage = () => {
 
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Laser Call</h3>
                             <div className="flex items-baseline gap-1 mb-4">
-                                <span className="text-4xl font-black text-gray-900 dark:text-white">€179</span>
+                                <span className="text-4xl font-black text-gray-900 dark:text-white">\u20ac179</span>
                                 <span className="text-gray-500 dark:text-gray-400">/ 15 min</span>
                             </div>
 
@@ -287,7 +301,7 @@ const TarievenPage = () => {
 
                             <h3 className="text-2xl font-bold text-white mb-2">Roadmap Call</h3>
                             <div className="flex items-baseline gap-1 mb-4">
-                                <span className="text-4xl font-black text-white">€279</span>
+                                <span className="text-4xl font-black text-white">\u20ac279</span>
                                 <span className="text-gray-400">/ 30 min</span>
                             </div>
 
@@ -309,7 +323,7 @@ const TarievenPage = () => {
 
                 {/* Info Box */}
                 <div className="max-w-3xl mx-auto bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-100 dark:border-yellow-900/30 rounded-2xl p-6 text-yellow-900 dark:text-yellow-100 text-sm text-center mb-8">
-                    <p className="font-bold mb-2">📅 Let op: Agenda & Voorbereiding</p>
+                    <p className="font-bold mb-2">\ud83d\udcc5 Let op: Agenda & Voorbereiding</p>
                     <p>
                         Ik heb <strong>minimaal 7 dagen</strong> nodig om me in te lezen in jouw situatie.
                         Na betaling ontvang je direct the link naar mijn agenda om een moment te kiezen (minimaal 7 dagen in de toekomst).
@@ -329,6 +343,12 @@ const TarievenPage = () => {
                     onClose={() => setIsModalOpen(false)}
                     onSuccess={handleFormSuccess}
                     callType={selectedType}
+                />
+
+                <FreeTrialModal
+                    isOpen={isSignupModalOpen}
+                    onClose={() => setIsSignupModalOpen(false)}
+                    isAnnual={false}
                 />
             </Container>
         </main>
