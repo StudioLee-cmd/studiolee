@@ -13,7 +13,7 @@ const pricingTiers = [
         id: 'saas',
         name: 'AI SaaS',
         subtitle: 'Volledig DIY',
-        price: '\u20ac79',
+        price: '€79',
         priceSuffix: '/m',
         pricePrefix: 'Vanaf',
         description: 'Toegang tot het platform, tickets & feature requests.',
@@ -32,7 +32,7 @@ const pricingTiers = [
         id: 'build',
         name: 'One-Time Build',
         subtitle: 'Custom Build-out',
-        price: '\u20ac1.000',
+        price: '€1.000',
         priceSuffix: '',
         pricePrefix: 'Vanaf',
         description: 'Geen maandelijkse kosten. Betaal alleen voor gebruik (Vapi/OpenAI).',
@@ -114,7 +114,7 @@ const TarievenPage = () => {
     const services = pricingTiers.map(tier => ({
         name: tier.name,
         description: tier.description,
-        ...(tier.price !== 'Op aanvraag' && { price: tier.price.replace('\u20ac', '').replace('.', '') }),
+        ...(tier.price !== 'Op aanvraag' && { price: tier.price.replace('€', '').replace('.', '') }),
     }));
 
     return (
@@ -271,7 +271,7 @@ const TarievenPage = () => {
 
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Laser Call</h3>
                             <div className="flex items-baseline gap-1 mb-4">
-                                <span className="text-4xl font-black text-gray-900 dark:text-white">\u20ac179</span>
+                                <span className="text-4xl font-black text-gray-900 dark:text-white">€179</span>
                                 <span className="text-gray-500 dark:text-gray-400">/ 15 min</span>
                             </div>
 
@@ -301,7 +301,7 @@ const TarievenPage = () => {
 
                             <h3 className="text-2xl font-bold text-white mb-2">Roadmap Call</h3>
                             <div className="flex items-baseline gap-1 mb-4">
-                                <span className="text-4xl font-black text-white">\u20ac279</span>
+                                <span className="text-4xl font-black text-white">€279</span>
                                 <span className="text-gray-400">/ 30 min</span>
                             </div>
 
@@ -323,7 +323,7 @@ const TarievenPage = () => {
 
                 {/* Info Box */}
                 <div className="max-w-3xl mx-auto bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-100 dark:border-yellow-900/30 rounded-2xl p-6 text-yellow-900 dark:text-yellow-100 text-sm text-center mb-8">
-                    <p className="font-bold mb-2">\ud83d\udcc5 Let op: Agenda & Voorbereiding</p>
+                    <p className="font-bold mb-2">📅 Let op: Agenda & Voorbereiding</p>
                     <p>
                         Ik heb <strong>minimaal 7 dagen</strong> nodig om me in te lezen in jouw situatie.
                         Na betaling ontvang je direct the link naar mijn agenda om een moment te kiezen (minimaal 7 dagen in de toekomst).
