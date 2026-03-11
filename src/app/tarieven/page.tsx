@@ -13,7 +13,8 @@ const pricingTiers = [
         id: 'saas',
         name: 'AI SaaS',
         subtitle: 'Volledig DIY',
-        price: '€79',
+        priceYearly: '€79',
+        priceMonthly: '€129',
         priceSuffix: '/m',
         pricePrefix: 'Vanaf',
         description: 'Toegang tot het platform, tickets & feature requests.',
@@ -70,6 +71,7 @@ const pricingTiers = [
 
 const TarievenPage = () => {
     const [loading, setLoading] = useState<string | null>(null);
+    const [isAnnual, setIsAnnual] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
     const [selectedType, setSelectedType] = useState<'laser' | 'roadmap'>('laser');
@@ -114,7 +116,7 @@ const TarievenPage = () => {
     const services = pricingTiers.map(tier => ({
         name: tier.name,
         description: tier.description,
-        ...(tier.price !== 'Op aanvraag' && { price: tier.price.replace('€', '').replace('.', '') }),
+        ...((tier as any).price !== 'Op aanvraag' && (tier as any).priceYearly && { price: (tier as any).priceYearly.replace('€', '').replace('.', '') }),
     }));
 
     return (
@@ -144,9 +146,35 @@ const TarievenPage = () => {
                     </p>
                 </div>
 
+                {/* Monthly / Yearly Toggle */}
+                <div className="flex justify-center items-center gap-4 mb-10">
+                    <span className={`text-lg font-medium transition-colors ${!isAnnual ? 'text-gray-900 dark:text-white' : 'text-gray-400'}`}>
+                        Maandelijks
+                    </span>
+                    <button
+                        onClick={() => setIsAnnual(!isAnnual)}
+                        className={`relative w-16 h-8 rounded-full transition-colors duration-300 focus:outline-none ${isAnnual ? 'bg-primary' : 'bg-gray-300 dark:bg-gray-700'}`}
+                    >
+                        <div
+                            className={`absolute top-1 left-1 bg-white w-6 h-6 rounded-full shadow-md transition-transform duration-300 ${isAnnual ? 'translate-x-8' : 'translate-x-0'}`}
+                        />
+                    </button>
+                    <span className={`text-lg font-medium transition-colors ${isAnnual ? 'text-gray-900 dark:text-white' : 'text-gray-400'}`}>
+                        Jaarlijks
+                        <span className="ml-2 text-xs font-bold text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30 px-2 py-1 rounded-full border border-green-200 dark:border-green-800">
+                            Beste Keus
+                        </span>
+                    </span>
+                </div>
+
                 {/* Pricing Tiers */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-20">
-                    {pricingTiers.map((tier) => (
+                    {pricingTiers.map((tier) => {
+                        const displayPrice = tier.id === 'saas'
+                            ? (isAnnual ? tier.priceYearly : tier.priceMonthly)
+                            : (tier as any).price;
+
+                        return (
                         <div
                             key={tier.id}
                             className={`relative rounded-3xl p-8 border transition-all hover:shadow-2xl group ${tier.highlighted
@@ -182,7 +210,7 @@ const TarievenPage = () => {
                             </p>
 
                             {/* Price */}
-                            <div className="flex items-baseline gap-1 mb-4">
+                            <div className="flex items-baseline gap-1 mb-2">
                                 {tier.pricePrefix && (
                                     <span className={`text-sm ${tier.highlighted ? 'text-gray-400' : 'text-gray-500 dark:text-gray-400'
                                         }`}>
@@ -191,7 +219,7 @@ const TarievenPage = () => {
                                 )}
                                 <span className={`text-4xl font-black ${tier.highlighted ? 'text-white' : 'text-gray-900 dark:text-white'
                                     }`}>
-                                    {tier.price}
+                                    {displayPrice}
                                 </span>
                                 {tier.priceSuffix && (
                                     <span className={`${tier.highlighted ? 'text-gray-400' : 'text-gray-500 dark:text-gray-400'
@@ -200,6 +228,22 @@ const TarievenPage = () => {
                                     </span>
                                 )}
                             </div>
+
+                            {/* Billing label for SaaS tier */}
+                            {tier.id === 'saas' && (
+                                <div className="mb-4 h-6">
+                                    {isAnnual ? (
+                                        <span className="text-xs font-semibold text-green-600 bg-green-50 dark:bg-green-900/30 px-2 py-1 rounded-full border border-green-200 dark:border-green-800">
+                                            Betaal per jaar (€600,- besparing)
+                                        </span>
+                                    ) : (
+                                        <span className="text-xs font-semibold text-gray-500">
+                                            Maandelijks opzegbaar
+                                        </span>
+                                    )}
+                                </div>
+                            )}
+                            {tier.id !== 'saas' && <div className="mb-4" />}
 
                             {/* Description */}
                             <p className={`text-sm mb-6 ${tier.highlighted ? 'text-gray-300' : 'text-gray-600 dark:text-gray-400'
@@ -227,10 +271,7 @@ const TarievenPage = () => {
                             {tier.id === 'saas' ? (
                                 <button
                                     onClick={() => setIsSignupModalOpen(true)}
-                                    className={`flex items-center justify-center w-full py-4 rounded-xl font-bold transition-all gap-2 ${tier.highlighted
-                                            ? 'bg-white text-gray-900 hover:bg-gray-100'
-                                            : 'bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100'
-                                        }`}
+                                    className={`flex items-center justify-center w-full py-4 rounded-xl font-bold transition-all gap-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100`}
                                 >
                                     {tier.cta} <BsArrowRight />
                                 </button>
@@ -248,7 +289,8 @@ const TarievenPage = () => {
                                 </a>
                             )}
                         </div>
-                    ))}
+                        );
+                    })}
                 </div>
 
                 {/* Divider */}
@@ -348,7 +390,7 @@ const TarievenPage = () => {
                 <FreeTrialModal
                     isOpen={isSignupModalOpen}
                     onClose={() => setIsSignupModalOpen(false)}
-                    isAnnual={false}
+                    isAnnual={isAnnual}
                 />
             </Container>
         </main>
