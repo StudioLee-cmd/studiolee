@@ -13,7 +13,7 @@ tags: ["branding", "MKB", "merkidentiteit"]
 
 Veel MKB-ondernemers denken dat branding iets is voor grote bedrijven met marketingafdelingen en miljoenenbudgetten. Maar branding is niets meer dan hoe klanten jouw bedrijf herkennen en onthouden.
 
-Een loodgieter met een herkenbaar busje, een consistente website en goede [reviews](/blog/hoe-mkb-bedrijven-meer-google-reviews-verzamelen) heeft een merk — ook zonder logo-designer of brand strategist. En dat merk is het verschil tussen een klant die jou belt of een concurrent.
+Een loodgieter met een herkenbaar busje, een consistente website en goede [reviews](/blog/hoe-mkb-meer-google-reviews-verzamelt) heeft een merk — ook zonder logo-designer of brand strategist. En dat merk is het verschil tussen een klant die jou belt of een concurrent.
 
 In een markt waar producten en diensten steeds meer op elkaar lijken, is je merk het enige wat je echt onderscheidt.
 
@@ -23,9 +23,9 @@ Merkidentiteit begint met drie vragen:
 
 **Waar sta je voor?** Niet je diensten, maar je waarden. Een schilder die staat voor "vakmanschap en eerlijkheid" heeft een ander merk dan een schilder die staat voor "snelheid en scherpe prijzen." Beide zijn valide — maar de keuze bepaalt je hele communicatie.
 
-**Wie is je ideale klant?** Niet "iedereen" maar een specifieke groep. Een hovenier die zich richt op "particulieren met grote tuinen in het Gooi" kan zijn hele merk daarop afstemmen — van zijn [website](/blog/waarom-mkb-website-geen-bezoekers-omzet-klanten) tot zijn social media tot zijn werkkleding.
+**Wie is je ideale klant?** Niet "iedereen" maar een specifieke groep. Een hovenier die zich richt op "particulieren met grote tuinen in het Gooi" kan zijn hele merk daarop afstemmen — van zijn [website](/blog/mkb-website-bezoekers-omzetten-klanten) tot zijn social media tot zijn werkkleding.
 
-**Wat maakt je anders?** Niet beter, maar anders. Misschien is het je persoonlijke aanpak, je specialisatie, je jarenlange ervaring in een specifieke niche of je innovatieve manier van werken met [AI](/blog/wat-ai-automatisering-betekent-voor-mkb-2026).
+**Wat maakt je anders?** Niet beter, maar anders. Misschien is het je persoonlijke aanpak, je specialisatie, je jarenlange ervaring in een specifieke niche of je innovatieve manier van werken met [AI](/blog/wat-ai-automatisering-betekent-voor-mkb-in-2026).
 
 ## Visuele consistentie zonder designer
 
@@ -43,13 +43,13 @@ Je hoeft geen duizenden euro's uit te geven aan een designbureau:
 
 Je merk leeft online:
 
-**[Website](/blog/waarom-mkb-website-geen-bezoekers-omzet-klanten)**: je digitale thuisbasis. Het moet jou weerspiegelen, niet een willekeurig template. Echte foto's, je verhaal, je stijl.
+**[Website](/blog/mkb-website-bezoekers-omzetten-klanten)**: je digitale thuisbasis. Het moet jou weerspiegelen, niet een willekeurig template. Echte foto's, je verhaal, je stijl.
 
-**[Social media](/blog/social-media-strategie-mkb)**: post consistent in je eigen stijl. Niet de ene dag zakelijk en de andere dag informeel — kies een toon en houd die vast.
+**[Social media](/blog/social-media-mkb-strategie-2026)**: post consistent in je eigen stijl. Niet de ene dag zakelijk en de andere dag informeel — kies een toon en houd die vast.
 
 **[Google Bedrijfsprofiel](/blog/online-vindbaarheid-mkb-google)**: houd het actueel, post regelmatig en reageer op reviews in je eigen stijl.
 
-**[Email marketing](/blog/emailmarketing-mkb)**: elke mail die je stuurt is een merkmoment. Gebruik je kleuren, je logo en je toon.
+**[Email marketing](/blog/klantcases-marketingtool-mkb)**: elke mail die je stuurt is een merkmoment. Gebruik je kleuren, je logo en je toon.
 
 ## Je merk laten groeien
 

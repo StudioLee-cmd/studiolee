@@ -31,7 +31,7 @@ Google wil zijn gebruikers het beste antwoord geven. Als jouw website dat antwoo
 
 ## Je website optimaliseren voor zoekmachines
 
-De basis van vindbaarheid is een goed geoptimaliseerde [website](/blog/waarom-mkb-website-geen-bezoekers-omzet-klanten). Dat begint bij techniek en eindigt bij inhoud.
+De basis van vindbaarheid is een goed geoptimaliseerde [website](/blog/mkb-website-bezoekers-omzetten-klanten). Dat begint bij techniek en eindigt bij inhoud.
 
 **Snelheid**. Een website die langer dan drie seconden laadt, verliest de helft van de bezoekers. Google meet dit en straft trage websites af. Test je snelheid op Google PageSpeed Insights en los de rode waarschuwingen op.
 
@@ -49,7 +49,7 @@ Voor de meeste MKB-bedrijven is lokale vindbaarheid het belangrijkst. Je hoeft n
 
 **Google Bedrijfsprofiel**. Dit is de snelste en meest effectieve manier om lokaal vindbaar te worden. Vul het volledig in: bedrijfsnaam, adres, telefoon, openingstijden, categorieeen, beschrijving en foto's. Post wekelijks een update.
 
-**[Reviews](/blog/hoe-mkb-bedrijven-meer-google-reviews-verzamelen) verzamelen**. Google Bedrijfsprofielen met meer en betere reviews scoren hoger. Vraag na elke afgeronde klus om een review. Maak het makkelijk met een directe link.
+**[Reviews](/blog/hoe-mkb-meer-google-reviews-verzamelt) verzamelen**. Google Bedrijfsprofielen met meer en betere reviews scoren hoger. Vraag na elke afgeronde klus om een review. Maak het makkelijk met een directe link.
 
 **Lokale zoekwoorden**. Gebruik de naam van je stad of regio in je teksten. Niet onnatuurlijk ("schilder Den Haag beste schilder Den Haag"), maar waar het logisch is: "Als schilder in Den Haag werken we voornamelijk in de wijken Scheveningen, Bezuidenhout en Benoordenhout."
 
@@ -63,7 +63,7 @@ De bedrijven die structureel groeien in vindbaarheid, investeren in content. Nie
 
 **FAQ-pagina**. Beantwoord de twintig meest gestelde vragen over jouw vak. Elke vraag is een potentiele zoekopdracht. En Google houdt van pagina's die duidelijke antwoorden geven.
 
-**[Social media](/blog/social-media-strategie-mkb) als versterker**. Social media posts beinvloeden je Google-ranking niet direct, maar ze zorgen wel voor verkeer naar je website. En meer verkeer is een positief signaal voor Google.
+**[Social media](/blog/social-media-mkb-strategie-2026) als versterker**. Social media posts beinvloeden je Google-ranking niet direct, maar ze zorgen wel voor verkeer naar je website. En meer verkeer is een positief signaal voor Google.
 
 **Consistentie boven kwantiteit**. Een blogartikel per maand is beter dan vijf artikelen in een maand en dan drie maanden niets. Google beloont websites die regelmatig nieuwe, relevante content publiceren.
 

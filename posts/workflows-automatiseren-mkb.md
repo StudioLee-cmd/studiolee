@@ -44,7 +44,7 @@ Handmatig afspraken plannen, bevestigen en herinneren kost uren per week:
 
 ### 3. Social media planning
 
-Social media is belangrijk voor [online vindbaarheid](/blog/online-vindbaarheid-mkb-bovenaan-google), maar dagelijks posten is tijdrovend. Met automatisering:
+Social media is belangrijk voor [online vindbaarheid](/blog/online-vindbaarheid-mkb-google), maar dagelijks posten is tijdrovend. Met automatisering:
 
 - Plan een maand aan content in één sessie
 - Automatische publicatie op het juiste moment
@@ -60,7 +60,7 @@ Handmatige facturatie is foutgevoelig en tijdrovend:
 
 ### 5. Review-verzameling
 
-Reviews zijn cruciaal voor je [online vindbaarheid](/blog/hoe-mkb-bedrijven-meer-google-reviews-verzamelen), maar handmatig vragen is inconsistent:
+Reviews zijn cruciaal voor je [online vindbaarheid](/blog/hoe-mkb-meer-google-reviews-verzamelt), maar handmatig vragen is inconsistent:
 
 - Automatisch review-verzoek 24 uur na een aankoop of dienst
 - Via het kanaal dat je klant prefereert (WhatsApp, e-mail, SMS)
@@ -112,4 +112,4 @@ Bekijk onze [tarieven](/tarieven) of [start met een gratis proefperiode](/free-t
 
 MKB-ondernemers die hun workflows automatiseren, winnen 10-15 uur per week terug. Die tijd investeer je in klantrelaties, strategie en groei — de dingen die je bedrijf écht vooruit helpen. Begin met één workflow, ervaar het verschil, en bouw van daaruit verder.
 
-Lees ook hoe [een chatbot op je website werkt](/blog/chatbot-website-mkb-wanneer-wel-niet) en hoe je [klantcases als marketingtool inzet](/blog/klantcases-marketingtool-mkb-overtuigen).
+Lees ook hoe [een chatbot op je website werkt](/blog/chatbot-website-mkb-wanneer-werkt-het) en hoe je [klantcases als marketingtool inzet](/blog/klantcases-marketingtool-mkb).

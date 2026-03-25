@@ -99,13 +99,13 @@ Upload je contactenlijst en verrijk de profielen met notities en categorieën.
 
 Een CRM werkt alleen als je het dagelijks bijhoudt. Plan 5 minuten per dag om contacten bij te werken.
 
-## CRM en [AI automatisering](/blog/ai-automatisering-mkb-2026) combineren
+## CRM en [AI automatisering](/blog/roi-ai-automatisering-mkb) combineren
 
 De nieuwste CRM-systemen integreren AI:
 
 - **Automatische contactverrijking** — AI vindt aanvullende bedrijfsinformatie
 - **Lead scoring** — AI voorspelt welke leads het meest kansrijk zijn
-- **Chatbot-integratie** — [chatbots](/blog/chatbot-website-wanneer-wel-niet-mkb) vangen leads op en loggen ze in het CRM
+- **Chatbot-integratie** — [chatbots](/blog/chatbot-website-mkb-wanneer-werkt-het) vangen leads op en loggen ze in het CRM
 - **Email personalisatie** — AI schrijft gepersonaliseerde follow-ups
 
 ## ROI van een CRM
@@ -118,7 +118,7 @@ Volgens onderzoek levert een CRM gemiddeld:
 
 ## Hulp nodig bij de implementatie?
 
-Bij StudioLee helpen we MKB-bedrijven met het opzetten en optimaliseren van hun digitale systemen. Van CRM-implementatie tot [leadgeneratie](/blog/leadgeneratie-mkb-website-bezoekers-klanten) en [workflow-automatisering](/blog/workflows-automatiseren-mkb).
+Bij StudioLee helpen we MKB-bedrijven met het opzetten en optimaliseren van hun digitale systemen. Van CRM-implementatie tot [leadgeneratie](/blog/leadgeneratie-mkb-website-bezoekers) en [workflow-automatisering](/blog/workflows-automatiseren-mkb).
 
 Bekijk onze [tarieven](/tarieven) of start met een [gratis proefperiode](/free-trial).
 

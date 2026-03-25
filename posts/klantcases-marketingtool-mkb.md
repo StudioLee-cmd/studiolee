@@ -56,7 +56,7 @@ Klantcases zijn perfecte social media content:
 - **Instagram**: een visuele samenvatting met de key metrics
 - **E-mail**: stuur een nieuwe case naar je mailinglijst met een persoonlijke intro
 
-Lees meer over hoe je [social media strategie](/blog/social-media-strategie-mkb-2026) klantcases kan versterken. Een case die gedeeld wordt door de klant zelf bereikt ook hun netwerk — dat is gratis, getargete exposure.
+Lees meer over hoe je [social media strategie](/blog/social-media-mkb-strategie-2026) klantcases kan versterken. Een case die gedeeld wordt door de klant zelf bereikt ook hun netwerk — dat is gratis, getargete exposure.
 
 ## Conclusie
 
