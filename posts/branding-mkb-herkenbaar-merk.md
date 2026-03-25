@@ -25,7 +25,7 @@ Merkidentiteit begint met drie vragen:
 
 **Wie is je ideale klant?** Niet "iedereen" maar een specifieke groep. Een hovenier die zich richt op "particulieren met grote tuinen in het Gooi" kan zijn hele merk daarop afstemmen — van zijn [website](/blog/mkb-website-bezoekers-omzetten-klanten) tot zijn social media tot zijn werkkleding.
 
-**Wat maakt je anders?** Niet beter, maar anders. Misschien is het je persoonlijke aanpak, je specialisatie, je jarenlange ervaring in een specifieke niche of je innovatieve manier van werken met [AI](/blog/wat-ai-automatisering-betekent-voor-mkb-in-2026).
+**Wat maakt je anders?** Niet beter, maar anders. Misschien is het je persoonlijke aanpak, je specialisatie, je jarenlange ervaring in een specifieke niche of je innovatieve manier van werken met [AI-automatisering](/blog/wat-ai-automatisering-betekent-voor-mkb-in-2026).
 
 ## Visuele consistentie zonder designer
 
@@ -43,13 +43,13 @@ Je hoeft geen duizenden euro's uit te geven aan een designbureau:
 
 Je merk leeft online:
 
-**[Website](/blog/mkb-website-bezoekers-omzetten-klanten)**: je digitale thuisbasis. Het moet jou weerspiegelen, niet een willekeurig template. Echte foto's, je verhaal, je stijl.
+**Website**: je digitale thuisbasis. Het moet jou weerspiegelen, niet een willekeurig template. Echte foto's, je verhaal, je stijl. Lees hoe je [je website omzet in een klantenmagneet](/blog/mkb-website-bezoekers-omzetten-klanten).
 
-**[Social media](/blog/social-media-mkb-strategie-2026)**: post consistent in je eigen stijl. Niet de ene dag zakelijk en de andere dag informeel — kies een toon en houd die vast.
+**Social media**: post consistent in je eigen stijl. Niet de ene dag zakelijk en de andere dag informeel — kies een toon en houd die vast. Een goede [social media strategie](/blog/social-media-mkb-strategie-2026) begint met herkenbaarheid.
 
-**[Google Bedrijfsprofiel](/blog/online-vindbaarheid-mkb-google)**: houd het actueel, post regelmatig en reageer op reviews in je eigen stijl.
+**Google Bedrijfsprofiel**: houd het actueel, post regelmatig en reageer op reviews in je eigen stijl. Je profiel bepaalt hoe je [online vindbaar](/blog/online-vindbaarheid-mkb-google) bent.
 
-**[Email marketing](/blog/klantcases-marketingtool-mkb)**: elke mail die je stuurt is een merkmoment. Gebruik je kleuren, je logo en je toon.
+**Email marketing**: elke mail die je stuurt is een merkmoment. Gebruik je kleuren, je logo en je toon.
 
 ## Je merk laten groeien
 
