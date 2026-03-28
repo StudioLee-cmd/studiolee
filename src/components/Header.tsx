@@ -20,11 +20,6 @@ const Header: React.FC = () => {
         setIsOpen(!isOpen);
     };
 
-    const handlePlanClick = (closeMenu?: () => void) => {
-        window.open('https://calendly.com/tim-studiolee', '_blank');
-        closeMenu?.();
-    };
-
     return (
         <header className="fixed top-0 left-0 right-0 z-50 px-4 md:px-0">
             <Container className="!px-0 max-w-7xl mx-auto">
@@ -55,12 +50,14 @@ const Header: React.FC = () => {
                     {/* CTA Button (Right) */}
                     <div className="hidden md:flex items-center gap-6 flex-shrink-0">
                         <AnimatedThemeToggler />
-                        <button
-                            onClick={() => handlePlanClick()}
-                            className="text-white bg-primary hover:bg-secondary px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+                        <a
+                            href="https://calendly.com/tim-studiolee"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white bg-primary hover:bg-secondary px-8 py-3 rounded-full font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 inline-block"
                         >
                             <ShinyText text="Plan Een Gesprek" speed={3} color="#ffffff" shineColor="var(--primary-accent)" />
-                        </button>
+                        </a>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -96,12 +93,15 @@ const Header: React.FC = () => {
                             </li>
                         ))}
                         <li className="pt-2">
-                            <button
-                                onClick={() => handlePlanClick(toggleMenu)}
+                            <a
+                                href="https://calendly.com/tim-studiolee"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="w-full text-white bg-primary hover:bg-primary-accent px-5 py-3 rounded-xl font-bold text-center block"
+                                onClick={toggleMenu}
                             >
                                 Start Gratis
-                            </button>
+                            </a>
                         </li>
                     </ul>
                 </div>
