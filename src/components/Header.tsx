@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 
 import Container from './Container';
@@ -16,19 +16,12 @@ import { menuItems } from '@/data/menuItems';
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const pathname = usePathname();
-    const router = useRouter();
-
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
     const handlePlanClick = (closeMenu?: () => void) => {
-        if (pathname === '/') {
-            document.getElementById('consulting')?.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            router.push('/#consulting');
-        }
+        window.open('https://calendly.com/tim-studiolee', '_blank');
         closeMenu?.();
     };
 
