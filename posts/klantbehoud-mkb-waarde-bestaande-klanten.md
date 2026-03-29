@@ -7,8 +7,6 @@ image: "/images/blog/klantbehoud-mkb-waarde-bestaande-klanten.png"
 tags: ["klantbehoud", "MKB", "klantstrategie"]
 ---
 
-# Klantbehoud in het MKB: waarom bestaande klanten meer waard zijn dan nieuwe
-
 De meeste MKB-bedrijven zijn gefocust op nieuwe klanten. Meer leads, meer bereik, meer advertenties. Maar de wiskunde vertelt een ander verhaal: het werven van een nieuwe klant kost vijf tot zeven keer meer dan het behouden van een bestaande.
 
 Een stijging van 5% in klantbehoud kan je winst met 25% tot 95% verhogen. Toch investeren de meeste bedrijven het overgrote deel van hun budget in acquisitie in plaats van retentie.

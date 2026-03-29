@@ -7,8 +7,6 @@ image: "/images/blog/email-marketing-mkb-hoogste-rendement.png"
 tags: ["E-mail", "Marketing", "MKB"]
 ---
 
-# E-mailmarketing voor het MKB: waarom het nog steeds het hoogste rendement oplevert
-
 Social media is sexy. SEO is slim. Maar als je puur naar rendement kijkt, wint e-mailmarketing het van allebei — en dat is al jaren zo. Voor elke euro die je investeert in e-mailmarketing, krijg je gemiddeld €36-€42 terug. Geen enkel ander marketingkanaal komt ook maar in de buurt.
 
 Toch wordt e-mailmarketing door veel MKB-bedrijven onderschat of zelfs genegeerd. "Niemand leest meer e-mail", hoor je. "Het is spam." Maar de cijfers vertellen een ander verhaal. In dit artikel leggen we uit waarom e-mailmarketing in 2026 nog steeds het slimste kanaal is voor MKB-bedrijven — en hoe je het effectief inzet.

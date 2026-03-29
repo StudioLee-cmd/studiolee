@@ -7,8 +7,6 @@ image: "/images/blog/online-reputatie-mkb.png"
 tags: ["online reputatie", "MKB", "reviews"]
 ---
 
-# Online reputatie voor het MKB: reviews als krachtigste groeimiddel
-
 Wanneer iemand een lokaal bedrijf zoekt, vertrouwt die persoon op reviews. Sterren, aantallen, recente ervaringen — het zijn de filters die bepalen of je gebeld wordt of overgeslagen. Voor MKB-bedrijven is online reputatie de krachtigste gratis marketingtool die er bestaat.
 
 ## Waarom reviews alles bepalen

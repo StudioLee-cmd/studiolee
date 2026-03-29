@@ -7,8 +7,6 @@ image: "/images/blog/crm-mkb-klantbeheer.png"
 tags: ["CRM", "MKB", "klantbeheer"]
 ---
 
-# Een CRM voor het MKB: waarom klantgegevens centraal beheren je laat groeien
-
 Je hebt klantgegevens in je mailbox, in WhatsApp-gesprekken, op losse briefjes en in je hoofd. Herkenbaar? De meeste MKB-bedrijven beheren hun klantrelaties op deze manier — en laten daardoor kansen liggen.
 
 Een CRM (Customer Relationship Management) systeem centraliseert al die informatie op één plek. Dit artikel legt uit waarom dat het verschil maakt.

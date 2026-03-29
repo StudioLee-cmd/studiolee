@@ -7,8 +7,6 @@ image: "/images/blog/google-bedrijfsprofiel-mkb.png"
 tags: ["google bedrijfsprofiel", "MKB", "lokale marketing"]
 ---
 
-# Google Bedrijfsprofiel voor het MKB: gratis lokale zichtbaarheid die werkt
-
 Wanneer iemand zoekt op "[dienst] in de buurt", toont Google eerst de kaartresultaten. Drie bedrijven, met sterren, afstand en een belknop. Als jij daar niet tussen staat, mis je de meest waardevolle lokale leads die er zijn.
 
 Je Google Bedrijfsprofiel is gratis, krachtig en door de meeste MKB-bedrijven onderschat. In dit artikel leer je hoe je het optimaal benut.

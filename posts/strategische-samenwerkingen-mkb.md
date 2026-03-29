@@ -7,8 +7,6 @@ image: "/images/blog/strategische-samenwerkingen-mkb.png"
 tags: ["samenwerkingen", "MKB", "groei"]
 ---
 
-# Strategische samenwerkingen voor het MKB: zo bouw je partnerschappen die groeien
-
 Nederlandse MKB'ers investeren massaal in online advertising, SEO en social media. Maar een van de krachtigste groeikanalen wordt systematisch onderschat: strategische samenwerkingen met complementaire bedrijven. Terwijl advertentiekosten stijgen, leveren goede partnerschappen leads op zonder mediabudget.
 
 ## Waarom samenwerkingen het MKB versterken
