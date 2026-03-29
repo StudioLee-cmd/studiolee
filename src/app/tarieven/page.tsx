@@ -90,7 +90,7 @@ const TarievenPage = () => {
         setLoading(type);
         try {
             const price = type === 'laser' ? '179.00' : '279.00';
-            const description = type === 'laser' ? 'Laser Call (15 min) - Studio Lee' : 'Roadmap Call (30 min) - Studio Lee';
+            const description = type === 'laser' ? 'Laser Call (30 min) - Studio Lee' : 'Roadmap Call (2 uur) - Studio Lee';
 
             const response = await fetch('/api/create-payment', {
                 method: 'POST',
@@ -314,7 +314,7 @@ const TarievenPage = () => {
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Laser Call</h3>
                             <div className="flex items-baseline gap-1 mb-4">
                                 <span className="text-4xl font-black text-gray-900 dark:text-white">€179</span>
-                                <span className="text-gray-500 dark:text-gray-400">/ 15 min</span>
+                                <span className="text-gray-500 dark:text-gray-400">/ 30 min</span>
                             </div>
 
                             <p className="text-gray-600 dark:text-gray-400 mb-8 min-h-[3rem]">
@@ -344,7 +344,7 @@ const TarievenPage = () => {
                             <h3 className="text-2xl font-bold text-white mb-2">Roadmap Call</h3>
                             <div className="flex items-baseline gap-1 mb-4">
                                 <span className="text-4xl font-black text-white">€279</span>
-                                <span className="text-gray-400">/ 30 min</span>
+                                <span className="text-gray-400">/ 2 uur</span>
                             </div>
 
                             <p className="text-gray-300 mb-8 min-h-[3rem]">
