@@ -6,6 +6,14 @@ export const menuItems: IMenuItem[] = [
         url: "/tarieven"
     },
     {
+        text: "Gratis Scan",
+        url: "/free-trial"
+    },
+    {
+        text: "Gratis Website",
+        url: "/free-website"
+    },
+    {
         text: "Ervaringen",
         url: "/#testimonials"
     },
