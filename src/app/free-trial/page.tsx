@@ -99,25 +99,25 @@ const FreeTrialPage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-12 px-4 sm:px-6 lg:px-8">
             <Container>
                 <div className="max-w-md mx-auto">
                     {/* Header */}
                     <div className="text-center mb-8">
-                        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+                        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
                             Start Je Gratis Proefperiode
                         </h1>
-                        <p className="text-gray-600 text-lg">
+                        <p className="text-gray-600 dark:text-gray-300 text-lg">
                             Start gratis uitproberen. Geen creditcard vereist.
                         </p>
                     </div>
 
                     {/* Form Card */}
-                    <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                    <div className="bg-white dark:bg-gray-800/50 rounded-2xl shadow-xl p-8 border border-gray-100 dark:border-gray-700">
                         <form onSubmit={handleSubmit} className="space-y-6">
                             {/* Email Field */}
                             <div>
-                                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                     E-mailadres <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -127,7 +127,7 @@ const FreeTrialPage = () => {
                                     required
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900 dark:text-white dark:bg-gray-700/50 dark:placeholder-gray-400"
                                     placeholder="jouw@email.nl"
                                     disabled={isLoading}
                                 />
@@ -135,7 +135,7 @@ const FreeTrialPage = () => {
 
                             {/* Business Name Field */}
                             <div>
-                                <label htmlFor="businessName" className="block text-sm font-semibold text-gray-700 mb-2">
+                                <label htmlFor="businessName" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                     Bedrijfsnaam <span className="text-red-500">*</span>
                                 </label>
                                 <input
@@ -145,7 +145,7 @@ const FreeTrialPage = () => {
                                     required
                                     value={formData.businessName}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900 dark:text-white dark:bg-gray-700/50 dark:placeholder-gray-400"
                                     placeholder="Jouw Bedrijfsnaam"
                                     disabled={isLoading}
                                 />
@@ -153,7 +153,7 @@ const FreeTrialPage = () => {
 
                             {/* Niche Dropdown */}
                             <div>
-                                <label htmlFor="niche" className="block text-sm font-semibold text-gray-700 mb-2">
+                                <label htmlFor="niche" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                     Niche <span className="text-red-500">*</span>
                                 </label>
                                 <select
@@ -162,7 +162,7 @@ const FreeTrialPage = () => {
                                     required
                                     value={formData.niche}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900 bg-white appearance-none cursor-pointer"
+                                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none text-gray-900 dark:text-white dark:bg-gray-700/50 bg-white dark:bg-gray-700/50 appearance-none cursor-pointer"
                                     style={{
                                         backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
                                         backgroundRepeat: 'no-repeat',
@@ -195,7 +195,7 @@ const FreeTrialPage = () => {
                                         disabled={isLoading}
                                     />
                                 </div>
-                                <label htmlFor="termsAccepted" className="ml-3 text-sm text-gray-700">
+                                <label htmlFor="termsAccepted" className="ml-3 text-sm text-gray-700 dark:text-gray-300">
                                     Ik ga akkoord met de voorwaarden en de proefperiode van 14 dagen. <span className="text-red-500">*</span>
                                 </label>
                             </div>
@@ -228,7 +228,7 @@ const FreeTrialPage = () => {
                         </form>
 
                         {/* Trust Badges */}
-                        <div className="mt-6 pt-6 border-t border-gray-100">
+                        <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-700">
                             <div className="flex items-center justify-center space-x-6 text-sm text-gray-500">
                                 <div className="flex items-center">
                                     <svg className="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
