@@ -85,6 +85,12 @@ const Hero: React.FC = () => {
                     <p className="text-sm text-gray-400 dark:text-gray-500 mt-2">
                         Ontvang binnen 2 minuten een AI-gegenereerde blauwdruk. Gratis &amp; direct resultaat.
                     </p>
+                    <a
+                        href="/free-website"
+                        className="text-sm text-primary hover:text-secondary font-medium mt-3 inline-block transition-colors"
+                    >
+                        Of vraag een gratis website design aan →
+                    </a>
                 </div>
 
                 <div className="absolute inset-0 w-full h-full -z-10 opacity-50 pointer-events-none">

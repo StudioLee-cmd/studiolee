@@ -5,6 +5,14 @@ import { authors } from '@/data/authors'
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.studiolee.nl'
 
+    // High-value landing pages
+    const landingPages = ['/free-website', '/free-trial', '/tarieven', '/portfolio'].map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }))
+
     // Static routes — rarely change
     const staticPages = ['', '/privacy', '/legal', '/algemene-voorwaarden']
     const staticRoutes = staticPages.map((route) => ({
@@ -39,5 +47,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.3,
     }))
 
-    return [...staticRoutes, ...blogIndex, ...blogRoutes, ...authorRoutes]
+    return [...staticRoutes, ...landingPages, ...blogIndex, ...blogRoutes, ...authorRoutes]
 }

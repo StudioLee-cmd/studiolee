@@ -18,6 +18,14 @@ export const footerDetails: {
             url: "/#consulting"
         },
         {
+            text: "Gratis Website Design",
+            url: "/free-website"
+        },
+        {
+            text: "Gratis AI Scan",
+            url: "/free-trial"
+        },
+        {
             text: "Ervaringen",
             url: "/#testimonials"
         },
