@@ -345,6 +345,137 @@ const FreeWebsitePage = () => {
                         </div>
                     </div>
 
+                    {/* SEO Content: What do you get? */}
+                    <div className="mt-16 space-y-12">
+                        <div>
+                            <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-4">
+                                Wat krijg je precies?
+                            </h2>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                {[
+                                    { title: 'Professioneel design op maat', desc: 'Gebaseerd op jouw huidige site en branche. Geen template — volledig op maat.' },
+                                    { title: 'Live preview link', desc: 'Je krijgt een werkende link naar je nieuwe site. Bekijk het op desktop en mobiel.' },
+                                    { title: 'SEO-geoptimaliseerd', desc: 'Meta tags, snelle laadtijden en mobielvriendelijk. Klaar om gevonden te worden.' },
+                                    { title: 'De bestanden zijn van jou', desc: 'Je kunt het design gratis ontvangen. Wil je het afgebouwd? Dan bouwen we het af.' },
+                                ].map((item) => (
+                                    <div key={item.title} className="bg-white dark:bg-gray-800/50 rounded-xl p-4 border border-gray-100 dark:border-gray-700">
+                                        <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{item.title}</h3>
+                                        <p className="text-sm text-gray-500 dark:text-gray-400">{item.desc}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* SEO Content: Pricing after free design */}
+                        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-6 md:p-8 text-white">
+                            <h2 className="text-xl font-bold mb-4 text-center">En daarna? Jij kiest.</h2>
+                            <div className="space-y-3 text-sm max-w-md mx-auto">
+                                <div className="flex justify-between border-b border-gray-700 pb-2">
+                                    <span className="text-gray-300">Website kopen (eenmalig)</span>
+                                    <span className="font-bold">€800</span>
+                                </div>
+                                <div className="flex justify-between border-b border-gray-700 pb-2">
+                                    <span className="text-gray-300">Hosting + onderhoud + blogs</span>
+                                    <span className="font-bold">€200/jaar</span>
+                                </div>
+                                <div className="flex justify-between border-b border-gray-700 pb-2">
+                                    <span className="text-gray-300">Of: compleet 25-in-1 AI platform</span>
+                                    <span className="font-bold text-blue-400">€79/maand</span>
+                                </div>
+                                <div className="flex justify-between pt-1">
+                                    <span className="text-gray-300">Managed service (volledige ontzorging)</span>
+                                    <span className="font-bold text-blue-400">Op aanvraag</span>
+                                </div>
+                            </div>
+                            <p className="text-gray-400 text-xs text-center mt-4">
+                                Niet verplicht. Het design is en blijft gratis.
+                                <a href="/tarieven" className="text-blue-400 hover:text-blue-300 ml-1">Bekijk alle tarieven →</a>
+                            </p>
+                        </div>
+
+                        {/* SEO Content: Why free? */}
+                        <div>
+                            <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-4">
+                                Waarom bieden wij dit gratis aan?
+                            </h2>
+                            <div className="text-gray-600 dark:text-gray-300 space-y-3 text-base leading-relaxed">
+                                <p>
+                                    De meeste MKB-bedrijven betalen €3.000 tot €10.000 voor een website bij een bureau. Of ze worstelen zelf
+                                    met WordPress, Wix of Squarespace. Het resultaat: een site die er niet uitziet, niet gevonden wordt,
+                                    en geen klanten oplevert.
+                                </p>
+                                <p>
+                                    Wij draaien het om. Je ziet eerst wat wij voor je kunnen maken — gratis, zonder risico. Bevalt het design?
+                                    Dan koop je het voor €800 eenmalig. Dat is een fractie van wat een bureau vraagt. En wil je meer?
+                                    Met ons 25-in-1 AI platform voor €79/maand krijg je ook een chatbot, Voice AI telefonist,
+                                    SEO automatisering, review management en social media.
+                                </p>
+                                <p>
+                                    Wij zijn geen gewone tool en geen goedkoop alternatief. STUDIOLEE levert agency-kwaliteit — strategie,
+                                    consulting én uitvoering — voor een tiende van de prijs. Normaal betaal je €1.500+ per maand voor een bureau.
+                                    Bij ons krijg je hetzelfde, maar slimmer geleverd.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* SEO Content: Bureau comparison */}
+                        <div className="bg-white dark:bg-gray-800/50 rounded-2xl p-6 border border-gray-100 dark:border-gray-700">
+                            <h2 className="text-xl font-bold text-gray-900 dark:text-white text-center mb-6">
+                                Website laten maken: wat kost het?
+                            </h2>
+                            <div className="space-y-3">
+                                {[
+                                    { method: 'Zelf bouwen (Wix/WordPress)', price: 'Gratis – €50/mnd', pro: 'Goedkoop', con: 'Kost 20-40 uur + ziet er niet professioneel uit' },
+                                    { method: 'Webdesign bureau', price: '€3.000 – €10.000', pro: 'Professioneel', con: 'Duur + weken wachten' },
+                                    { method: 'Freelancer', price: '€1.000 – €3.000', pro: 'Flexibel', con: 'Wisselende kwaliteit' },
+                                    { method: 'STUDIOLEE', price: '€800 eenmalig', pro: 'Professioneel + snel', con: 'Gratis preview eerst, dan pas betalen' },
+                                ].map((row) => (
+                                    <div key={row.method} className={`flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 rounded-xl ${row.method === 'STUDIOLEE' ? 'bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800' : 'bg-gray-50 dark:bg-gray-700/30'}`}>
+                                        <div className="flex-1">
+                                            <span className="font-semibold text-gray-900 dark:text-white">{row.method}</span>
+                                            <p className="text-xs text-gray-500 dark:text-gray-400">{row.pro} · {row.con}</p>
+                                        </div>
+                                        <span className={`font-bold mt-1 sm:mt-0 ${row.method === 'STUDIOLEE' ? 'text-blue-600 dark:text-blue-400' : 'text-gray-700 dark:text-gray-300'}`}>{row.price}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* FAQ */}
+                        <div>
+                            <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-6">
+                                Veelgestelde Vragen
+                            </h2>
+                            <div className="space-y-3">
+                                {[
+                                    { q: 'Is het echt gratis?', a: 'Ja, 100%. Wij maken een professioneel website design op maat. Je ontvangt een live preview link. Geen kosten, geen verplichtingen. De bestanden kun je gratis opvragen.' },
+                                    { q: 'Wat kost de website als ik het wil kopen?', a: '€800 eenmalig voor de website plus €200 per jaar voor hosting, onderhoud en blogs. Geen maandelijks abonnement nodig voor alleen de website.' },
+                                    { q: 'Wat is het 25-in-1 AI platform?', a: 'Voor €79/maand krijg je naast de website ook een AI chatbot, Voice AI telefonist, SEO automatisering, review management, social media planner, CRM en meer. Maandelijks opzegbaar.' },
+                                    { q: 'Hoe snel is het klaar?', a: 'Meestal binnen 48 uur. Uiterlijk binnen een week. Je ontvangt een live link naar je nieuwe website design.' },
+                                    { q: 'Hoe verschilt STUDIOLEE van een bureau?', a: 'Een traditioneel bureau rekent €1.500–€3.000+ per maand. Wij leveren dezelfde kwaliteit — strategie, consulting én uitvoering — voor een tiende van de prijs. Alles inbegrepen, geen verborgen kosten.' },
+                                ].map((faq) => (
+                                    <details key={faq.q} className="group bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700 rounded-xl">
+                                        <summary className="cursor-pointer p-4 font-semibold text-gray-900 dark:text-white flex justify-between items-center">
+                                            {faq.q}
+                                            <span className="text-blue-500 group-open:rotate-45 transition-transform text-xl ml-2">+</span>
+                                        </summary>
+                                        <div className="px-4 pb-4 text-sm text-gray-600 dark:text-gray-400">{faq.a}</div>
+                                    </details>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Internal links */}
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="/tarieven" className="text-center bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold py-3 px-6 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all">
+                                Bekijk alle tarieven
+                            </a>
+                            <a href="/portfolio" className="text-center border border-gray-300 dark:border-gray-600 font-semibold py-3 px-6 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-all text-gray-900 dark:text-white">
+                                Bekijk ons portfolio
+                            </a>
+                        </div>
+                    </div>
+
                     {/* Footer Note */}
                     <p className="text-center text-sm text-gray-500 mt-8">
                         Heb je vragen? Neem contact met ons op via{' '}
@@ -358,6 +489,24 @@ const FreeWebsitePage = () => {
                     </p>
                 </div>
             </Container>
+
+            {/* Schema.org FAQ */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        mainEntity: [
+                            { q: 'Is het echt gratis?', a: 'Ja, 100%. Wij maken een professioneel website design op maat. Je ontvangt een live preview link. Geen kosten, geen verplichtingen.' },
+                            { q: 'Wat kost de website als ik het wil kopen?', a: '€800 eenmalig plus €200 per jaar voor hosting, onderhoud en blogs.' },
+                            { q: 'Wat is het 25-in-1 AI platform?', a: 'Voor €79/maand krijg je een AI chatbot, Voice AI telefonist, SEO, review management, social media en meer.' },
+                            { q: 'Hoe snel is het klaar?', a: 'Meestal binnen 48 uur.' },
+                            { q: 'Hoe verschilt STUDIOLEE van een bureau?', a: 'Agency-kwaliteit voor een tiende van de prijs. Inclusief strategie en consulting.' },
+                        ].map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+                    }),
+                }}
+            />
         </div>
     );
 };
