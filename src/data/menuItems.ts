@@ -2,6 +2,18 @@ import { IMenuItem } from "@/types";
 
 export const menuItems: IMenuItem[] = [
     {
+        text: "Diensten",
+        url: "#",
+        children: [
+            { text: "AI Chatbot", url: "/chatbot" },
+            { text: "AI Telefonist", url: "/voice-ai" },
+            { text: "SEO & Vindbaarheid", url: "/seo" },
+            { text: "Social Media", url: "/social-media" },
+            { text: "Review Management", url: "/reviews" },
+            { text: "Review Pakket", url: "/review-pakket" },
+        ]
+    },
+    {
         text: "Tarieven",
         url: "/tarieven"
     },
@@ -12,10 +24,6 @@ export const menuItems: IMenuItem[] = [
     {
         text: "Gratis Website",
         url: "/free-website"
-    },
-    {
-        text: "Ervaringen",
-        url: "/#testimonials"
     },
     {
         text: "Blog",

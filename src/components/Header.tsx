@@ -15,6 +15,7 @@ import { menuItems } from '@/data/menuItems';
 
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [openDropdown, setOpenDropdown] = useState<string | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -39,10 +40,30 @@ const Header: React.FC = () => {
                     {/* Desktop Menu (Center) */}
                     <ul className="hidden lg:flex flex-grow justify-center space-x-10 pl-20">
                         {menuItems.map(item => (
-                            <li key={item.text}>
-                                <Link href={item.url} className="text-gray-600 hover:text-primary font-medium transition-colors text-base dark:text-gray-300 dark:hover:text-primary">
-                                    {item.text}
-                                </Link>
+                            <li key={item.text} className="relative"
+                                onMouseEnter={() => item.children && setOpenDropdown(item.text)}
+                                onMouseLeave={() => setOpenDropdown(null)}>
+                                {item.children ? (
+                                    <>
+                                        <button className="text-gray-600 hover:text-primary font-medium transition-colors text-base dark:text-gray-300 dark:hover:text-primary flex items-center gap-1">
+                                            {item.text}
+                                            <svg className={`w-3 h-3 transition-transform ${openDropdown === item.text ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                                        </button>
+                                        {openDropdown === item.text && (
+                                            <div className="absolute top-full left-0 mt-1 bg-white dark:bg-neutral-900 border border-gray-100 dark:border-neutral-800 rounded-xl shadow-xl py-2 min-w-[220px] z-50">
+                                                {item.children.map(child => (
+                                                    <Link key={child.text} href={child.url} className="block px-4 py-2.5 text-sm text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-50 dark:hover:bg-neutral-800 transition-colors">
+                                                        {child.text}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </>
+                                ) : (
+                                    <Link href={item.url} className="text-gray-600 hover:text-primary font-medium transition-colors text-base dark:text-gray-300 dark:hover:text-primary">
+                                        {item.text}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>
@@ -87,9 +108,22 @@ const Header: React.FC = () => {
                     <ul className="flex flex-col space-y-4 py-6 px-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-lg text-foreground hover:text-primary block font-medium" onClick={toggleMenu}>
-                                    {item.text}
-                                </Link>
+                                {item.children ? (
+                                    <div>
+                                        <span className="text-lg text-foreground font-semibold block mb-2">{item.text}</span>
+                                        <div className="pl-4 space-y-2">
+                                            {item.children.map(child => (
+                                                <Link key={child.text} href={child.url} className="text-foreground hover:text-primary block" onClick={toggleMenu}>
+                                                    {child.text}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <Link href={item.url} className="text-lg text-foreground hover:text-primary block font-medium" onClick={toggleMenu}>
+                                        {item.text}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                         <li className="pt-2">
