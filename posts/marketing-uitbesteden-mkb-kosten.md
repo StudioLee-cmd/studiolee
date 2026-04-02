@@ -1,7 +1,7 @@
 ---
 title: "Marketing uitbesteden als MKB: wat kost het en wanneer loont het?"
 excerpt: "Wat kost marketing uitbesteden voor MKB? Vergelijk bureaus, freelancers en AI-oplossingen. Eerlijk kostenplaatje."
-date: "2026-04-01"
+date: "2026-04-02"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/marketing-uitbesteden-mkb-kosten.png"
 tags: ["Marketing", "MKB"]
