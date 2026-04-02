@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import { HiOutlineXMark, HiBars3 } from 'react-icons/hi2';
 
@@ -16,6 +16,18 @@ import { menuItems } from '@/data/menuItems';
 const Header: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+    const dropdownRef = useRef<HTMLLIElement>(null);
+    const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+                setOpenDropdown(null);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -39,25 +51,24 @@ const Header: React.FC = () => {
 
                     {/* Desktop Menu (Center) */}
                     <ul className="hidden lg:flex flex-grow justify-center space-x-10 pl-20">
-                        {menuItems.map(item => (
+                                                {menuItems.map(item => (
                             <li key={item.text} className="relative"
-                                onMouseEnter={() => item.children && setOpenDropdown(item.text)}
-                                onMouseLeave={() => setOpenDropdown(null)}>
+                                ref={item.children ? dropdownRef : undefined}
+                                onMouseEnter={() => { if (item.children) { if (dropdownTimeout.current) clearTimeout(dropdownTimeout.current); setOpenDropdown(item.text); } }}
+                                onMouseLeave={() => { if (item.children) { dropdownTimeout.current = setTimeout(() => setOpenDropdown(null), 300); } }}>
                                 {item.children ? (
                                     <>
-                                        <button className="text-gray-600 hover:text-primary font-medium transition-colors text-base dark:text-gray-300 dark:hover:text-primary flex items-center gap-1">
+                                        <button onClick={() => setOpenDropdown(openDropdown === item.text ? null : item.text)} className="text-gray-600 hover:text-primary font-medium transition-colors text-base dark:text-gray-300 dark:hover:text-primary flex items-center gap-1">
                                             {item.text}
-                                            <svg className={`w-3 h-3 transition-transform ${openDropdown === item.text ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                                            <svg className={`w-3 h-3 transition-transform duration-200 ${openDropdown === item.text ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                                         </button>
-                                        {openDropdown === item.text && (
-                                            <div className="absolute top-full left-0 mt-1 bg-white dark:bg-neutral-900 border border-gray-100 dark:border-neutral-800 rounded-xl shadow-xl py-2 min-w-[220px] z-50">
-                                                {item.children.map(child => (
-                                                    <Link key={child.text} href={child.url} className="block px-4 py-2.5 text-sm text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-50 dark:hover:bg-neutral-800 transition-colors">
-                                                        {child.text}
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        )}
+                                        <div className={`absolute top-full left-0 mt-1 bg-white dark:bg-neutral-900 border border-gray-100 dark:border-neutral-800 rounded-xl shadow-xl py-2 min-w-[220px] z-50 transition-all duration-200 ease-out origin-top ${openDropdown === item.text ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"}`}>
+                                            {item.children.map(child => (
+                                                <Link key={child.text} href={child.url} className="block px-4 py-2.5 text-sm text-gray-600 dark:text-gray-300 hover:text-primary hover:bg-gray-50 dark:hover:bg-neutral-800 transition-colors" onClick={() => setOpenDropdown(null)}>
+                                                    {child.text}
+                                                </Link>
+                                            ))}
+                                        </div>
                                     </>
                                 ) : (
                                     <Link href={item.url} className="text-gray-600 hover:text-primary font-medium transition-colors text-base dark:text-gray-300 dark:hover:text-primary">
