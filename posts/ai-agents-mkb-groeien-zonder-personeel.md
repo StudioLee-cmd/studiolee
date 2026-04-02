@@ -5,6 +5,7 @@ date: "2026-03-10"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/ai-agents-mkb-groeien-zonder-personeel.png"
 tags: ["AI", "MKB", "Automatisering"]
+cluster: "ai-trends"
 ---
 
 ## De stille revolutie in het MKB

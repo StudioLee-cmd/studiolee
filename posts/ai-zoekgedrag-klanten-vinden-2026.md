@@ -5,6 +5,7 @@ date: "2026-03-31"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/ai-zoekgedrag-klanten-vinden-2026.jpg"
 tags: ["AI", "Zoekgedrag", "SEO"]
+cluster: "ai-zoekgedrag"
 ---
 
 ## Van Google naar ChatGPT: hoe zoekgedrag verandert

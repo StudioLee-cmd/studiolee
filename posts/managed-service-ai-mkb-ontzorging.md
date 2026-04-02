@@ -5,6 +5,7 @@ date: "2026-03-30"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/managed-service-ai-mkb-ontzorging.jpg"
 tags: ["Managed Service", "AI", "MKB"]
+cluster: "managed-service"
 ---
 
 ## Wat is een managed AI service?

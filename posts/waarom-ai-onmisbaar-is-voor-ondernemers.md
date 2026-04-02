@@ -5,6 +5,7 @@ date: "2026-01-15"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/waarom-ai-onmisbaar-is-voor-ondernemers.png"
 tags: ["AI", "Ondernemen", "Groei"]
+cluster: ""
 ---
 
 De wereld verandert sneller dan ooit. Terwijl je dit leest, zijn er duizenden bedrijven die kunstmatige intelligentie implementeren om hun concurrenten voorbij te streven. De vraag is niet meer óf je AI nodig hebt, maar hoe snel je het kunt implementeren voordat je achterloopt op de rest van de markt.

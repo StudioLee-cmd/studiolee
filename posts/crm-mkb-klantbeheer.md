@@ -5,6 +5,7 @@ date: "2026-03-24"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/crm-mkb-klantbeheer.png"
 tags: ["CRM", "MKB", "klantbeheer"]
+cluster: "crm-mkb"
 ---
 
 Je hebt klantgegevens in je mailbox, in WhatsApp-gesprekken, op losse briefjes en in je hoofd. Herkenbaar? De meeste MKB-bedrijven beheren hun klantrelaties op deze manier — en laten daardoor kansen liggen.

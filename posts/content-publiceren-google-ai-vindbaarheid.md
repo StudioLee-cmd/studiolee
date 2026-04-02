@@ -5,6 +5,7 @@ date: "2026-02-24"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/content-publiceren-google-ai-vindbaarheid.png"
 tags: ["Content", "SEO", "AI", "Marketing"]
+cluster: ""
 ---
 
 Je hebt een mooie website. Professioneel ontwerp, duidelijke diensten, nette foto's. Je bent er best trots op. Maar er is een probleem dat je waarschijnlijk niet doorhebt: je website staat stil. Er is al maanden – misschien zelfs jaren – niks nieuws op verschenen. Geen nieuwe pagina's, geen blogs, geen updates. En precies dát is de reden waarom niemand je vindt.

@@ -5,6 +5,7 @@ date: "2026-01-20"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/google-reviews-automatiseren.png"
 tags: ["Marketing", "Reviews", "Groei"]
+cluster: ""
 ---
 
 Als je zelf iets koopt of een dienst zoekt, wat doe je dan? Precies: je kijkt op Google Maps en checkt de sterren. Heeft een bedrijf 3,4 sterren? Dan scrol je door. Heeft het 4,8 sterren met 200 reviews? Dan neem je contact op. Zo simpel is het geworden.

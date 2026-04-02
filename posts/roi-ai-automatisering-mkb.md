@@ -5,6 +5,7 @@ date: "2026-03-14"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/roi-ai-automatisering-mkb.png"
 tags: ["AI", "ROI", "MKB"]
+cluster: "roi-automatisering"
 ---
 
 AI-automatisering klinkt indrukwekkend, maar als ondernemer wil je weten: wat levert het me op? De belofte van tijdsbesparing en efficiëntie is mooi, maar hoeveel precies? En wanneer verdien je de investering terug?

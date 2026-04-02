@@ -5,6 +5,7 @@ date: "2026-03-11"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/gevonden-worden-in-chatgpt-mkb.png"
 tags: ["AI", "SEO", "ChatGPT"]
+cluster: "ai-zoekgedrag"
 ---
 
 ## Het zoekgedrag verandert — snel

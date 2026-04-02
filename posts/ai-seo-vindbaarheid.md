@@ -5,6 +5,7 @@ date: "2026-02-05"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/ai-seo-vindbaarheid.png"
 tags: ["SEO", "AI", "Marketing"]
+cluster: ""
 ---
 
 De manier waarop mensen zoeken naar informatie, producten en diensten verandert fundamenteel. Het is de grootste shift sinds de opkomst van Google zelf. Naast traditionele zoekmachines gebruiken steeds meer mensen ChatGPT, Perplexity, Claude en andere AI-tools om antwoorden te vinden op hun vragen. "Welke dienstverlener is de beste voor [probleem]?" "Hoe los ik [specifiek probleem] op?" "Wie kan mij helpen met [uitdaging]?"

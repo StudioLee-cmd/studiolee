@@ -5,6 +5,7 @@ date: "2026-02-23"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/whatsapp-automatisering-voor-bedrijven.png"
 tags: ["WhatsApp", "Automatisering", "Klantcommunicatie", "Sales"]
+cluster: ""
 ---
 
 WhatsApp is de populairste communicatie-app van Nederland. Meer dan 13 miljoen Nederlanders gebruiken het dagelijks. En steeds meer van die mensen verwachten dat ze ook met bedrijven via WhatsApp kunnen communiceren. "Even een appje sturen" voelt laagdrempelig, snel en persoonlijk. Veel laagdrempeliger dan bellen, en veel persoonlijker dan een email die in een volle inbox verdwijnt.

@@ -5,6 +5,7 @@ date: "2026-02-20"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/website-chatbots-leads-genereren.png"
 tags: ["Chatbots", "Leads", "Sales", "Automatisering"]
+cluster: ""
 ---
 
 Je website draait 24 uur per dag, 7 dagen per week. Maar jij niet. En dat is precies het probleem. Elke avond, elk weekend, elke feestdag zijn er potentiële klanten die op je website landen, rondkijken, interesse hebben... en dan weer vertrekken. Zonder een spoor achter te laten. Zonder contact op te nemen. Weg. Voor altijd.

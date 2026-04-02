@@ -5,6 +5,7 @@ date: "2026-02-06"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/starten-met-studiolee.png"
 tags: ["Getting Started", "STUDIOLEE", "Onboarding"]
+cluster: ""
 ---
 
 Verandering kan eng zijn. Nieuwe technologie implementeren voelt vaak overweldigend, vooral als je niet technisch bent aangelegd. Je hebt genoeg op je bord zonder dat je je ook nog moet verdiepen in AI, automatisering en complexe software. Wij snappen dat volledig – en daarom hebben we het proces zo simpel en ontzorgend mogelijk gemaakt.

@@ -5,6 +5,7 @@ date: "2026-03-20"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/chatbot-website-mkb-wanneer-werkt-het.png"
 tags: ["Chatbot", "AI", "MKB"]
+cluster: "chatbot"
 ---
 
 ## Wat is een chatbot precies

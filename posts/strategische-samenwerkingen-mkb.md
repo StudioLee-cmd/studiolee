@@ -5,6 +5,7 @@ date: "2026-03-28"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/strategische-samenwerkingen-mkb.png"
 tags: ["samenwerkingen", "MKB", "groei"]
+cluster: "samenwerkingen"
 ---
 
 Nederlandse MKB'ers investeren massaal in online advertising, SEO en social media. Maar een van de krachtigste groeikanalen wordt systematisch onderschat: strategische samenwerkingen met complementaire bedrijven. Terwijl advertentiekosten stijgen, leveren goede partnerschappen leads op zonder mediabudget.

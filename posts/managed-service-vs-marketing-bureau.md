@@ -5,6 +5,7 @@ date: "2026-02-01"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/managed-service-vs-marketing-bureau.png"
 tags: ["Managed Service", "Strategie", "Vergelijking"]
+cluster: ""
 ---
 
 Als je als ondernemer wilt groeien, kom je op een punt dat je het niet meer alleen afkunt. Je hebt marketing nodig om nieuwe klanten aan te trekken. Je hebt structuur nodig om efficiënt te blijven. Je moet zichtbaar zijn om relevant te blijven in een steeds competitievere markt.

@@ -5,6 +5,7 @@ date: "2026-04-01"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/ai-vervangt-marketingbureaus.jpg"
 tags: ["1 April", "Marketing", "AI"]
+cluster: "managed-service"
 ---
 
 ## AI vervangt ons allemaal — of toch niet?

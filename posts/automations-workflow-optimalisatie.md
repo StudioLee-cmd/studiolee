@@ -5,6 +5,7 @@ date: "2026-02-03"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/automations-workflow-optimalisatie.png"
 tags: ["Automations", "Efficiëntie", "Productiviteit"]
+cluster: ""
 ---
 
 Hoeveel tijd besteed je per week aan repetitieve taken die eigenlijk geen denkwerk vereisen? Emails beantwoorden met steeds dezelfde informatie, facturen handmatig versturen, afspraken bevestigen, leads opvolgen, reminders sturen naar klanten die nog moeten betalen... Het vreet uren. Uren die je zou kunnen besteden aan strategisch werk, aan groeien, of simpelweg aan je leven buiten werk.

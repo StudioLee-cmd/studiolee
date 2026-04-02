@@ -5,6 +5,7 @@ date: "2026-03-06"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/wat-ai-automatisering-betekent-voor-mkb-in-2026.png"
 tags: ["AI", "Automatisering", "MKB"]
+cluster: "ai-automatisering"
 ---
 
 AI was lange tijd het domein van grote corporates met forse IT-budgetten. Die tijd is voorbij. In 2026 is AI-automatisering beschikbaar voor elke MKB-ondernemer — betaalbaar, toegankelijk en direct inzetbaar. De vraag is niet meer óf je AI gaat gebruiken, maar wanneer.

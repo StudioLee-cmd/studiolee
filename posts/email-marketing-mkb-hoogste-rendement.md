@@ -5,6 +5,7 @@ date: "2026-03-13"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/email-marketing-mkb-hoogste-rendement.png"
 tags: ["E-mail", "Marketing", "MKB"]
+cluster: "email-marketing"
 ---
 
 Social media is sexy. SEO is slim. Maar als je puur naar rendement kijkt, wint e-mailmarketing het van allebei — en dat is al jaren zo. Voor elke euro die je investeert in e-mailmarketing, krijg je gemiddeld €36-€42 terug. Geen enkel ander marketingkanaal komt ook maar in de buurt.

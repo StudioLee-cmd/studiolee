@@ -5,6 +5,7 @@ date: "2026-03-26"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/klantbehoud-mkb-waarde-bestaande-klanten.png"
 tags: ["klantbehoud", "MKB", "klantstrategie"]
+cluster: "crm-klantbeheer"
 ---
 
 De meeste MKB-bedrijven zijn gefocust op nieuwe klanten. Meer leads, meer bereik, meer advertenties. Maar de wiskunde vertelt een ander verhaal: het werven van een nieuwe klant kost vijf tot zeven keer meer dan het behouden van een bestaande.

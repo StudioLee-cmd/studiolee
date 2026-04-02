@@ -5,6 +5,7 @@ date: "2026-03-12"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/mkb-website-bezoekers-omzetten-klanten.png"
 tags: ["MKB", "Website", "Conversie"]
+cluster: "website-conversie"
 ---
 
 ## Het probleem: bezoekers zonder resultaat

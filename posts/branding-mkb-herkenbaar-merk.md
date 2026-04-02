@@ -7,6 +7,7 @@ image: "/images/blog/branding-mkb-herkenbaar-merk.png"
 author: "Tim van der Lee"
 authorSlug: "tim-van-der-lee"
 tags: ["branding", "MKB", "merkidentiteit"]
+cluster: "branding"
 ---
 
 ## Waarom branding ook voor het MKB essentieel is

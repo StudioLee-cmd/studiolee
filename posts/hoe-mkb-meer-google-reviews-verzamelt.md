@@ -5,6 +5,7 @@ date: "2026-03-08"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/hoe-mkb-meer-google-reviews-verzamelt.png"
 tags: ["Reviews", "Google", "MKB", "Automatisering"]
+cluster: "review-automatisering"
 ---
 
 ## Waarom Google reviews belangrijker zijn dan ooit

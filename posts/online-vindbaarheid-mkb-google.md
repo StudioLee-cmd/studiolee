@@ -7,6 +7,7 @@ image: "/images/blog/online-vindbaarheid-mkb-google.png"
 author: "Tim van der Lee"
 authorSlug: "tim-van-der-lee"
 tags: ["vindbaarheid", "MKB", "Google"]
+cluster: "vindbaarheid"
 ---
 
 ## Waarom vindbaarheid alles bepaalt

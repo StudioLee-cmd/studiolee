@@ -5,6 +5,7 @@ date: "2026-03-30"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/ai-bureau-vs-traditioneel-marketingbureau.jpg"
 tags: ["AI", "Marketing", "MKB"]
+cluster: "managed-service"
 ---
 
 ## Wat een traditioneel bureau je kost

@@ -7,6 +7,7 @@ image: "/images/blog/leadgeneratie-mkb-website-bezoekers.png"
 author: "Tim van der Lee"
 authorSlug: "tim-van-der-lee"
 tags: ["leadgeneratie", "MKB", "conversie"]
+cluster: "lead-opvolging"
 ---
 
 ## Het probleem: bezoekers die vertrekken

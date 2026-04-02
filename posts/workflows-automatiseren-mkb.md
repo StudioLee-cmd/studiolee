@@ -5,6 +5,7 @@ date: "2026-03-24"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/workflows-automatiseren-mkb.png"
 tags: ["Automatisering", "MKB", "Groei"]
+cluster: "ai-automatisering"
 ---
 
 Elke MKB-ondernemer kent het gevoel: je werkt 50 uur per week, maar de helft van die tijd gaat op aan repetitief werk. Facturen versturen, afspraken bevestigen, social media posts plannen, e-mails beantwoorden, leads opvolgen. Het is werk dat gedaan moet worden, maar het groeit je bedrijf niet.

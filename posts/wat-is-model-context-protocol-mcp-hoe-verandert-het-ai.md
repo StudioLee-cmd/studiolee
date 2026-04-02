@@ -5,6 +5,7 @@ date: "2026-03-07"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/wat-is-model-context-protocol-mcp-hoe-verandert-het-ai.png"
 tags: ["AI", "MCP", "Technologie"]
+cluster: "tools-uitleg"
 ---
 
 Als je met AI werkt, merk je het probleem al snel: elk AI-model leeft in zijn eigen bubbel. ChatGPT weet niet wat er in je CRM staat. Claude kan je Google Agenda niet lezen. Een AI-assistent die niets kan doen behalve tekst genereren, is beperkt. Het Model Context Protocol (MCP) lost dat op.

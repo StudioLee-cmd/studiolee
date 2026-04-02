@@ -5,6 +5,7 @@ date: "2026-03-07"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/beste-ai-tools-voor-mkb-2026.png"
 tags: ["AI", "MKB", "Vergelijking", "Tools"]
+cluster: "software-vergelijking"
 ---
 
 AI is geen buzzword meer — het is een praktisch hulpmiddel dat MKB-bedrijven écht helpt groeien. Maar welke tools zijn de moeite waard? En wat past bij een bedrijf met 1 tot 20 medewerkers? In dit overzicht vergelijken we de populairste AI-tools voor het Nederlandse MKB in 2026.

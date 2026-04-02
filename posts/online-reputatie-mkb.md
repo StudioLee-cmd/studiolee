@@ -5,6 +5,7 @@ date: "2026-03-28"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/online-reputatie-mkb.png"
 tags: ["online reputatie", "MKB", "reviews"]
+cluster: "online-reputatie"
 ---
 
 Wanneer iemand een lokaal bedrijf zoekt, vertrouwt die persoon op reviews. Sterren, aantallen, recente ervaringen — het zijn de filters die bepalen of je gebeld wordt of overgeslagen. Voor MKB-bedrijven is online reputatie de krachtigste gratis marketingtool die er bestaat.

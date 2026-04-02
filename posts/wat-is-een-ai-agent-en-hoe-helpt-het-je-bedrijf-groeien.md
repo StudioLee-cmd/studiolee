@@ -5,6 +5,7 @@ date: "2026-03-03"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/wat-is-een-ai-agent-en-hoe-helpt-het-je-bedrijf-groeien.png"
 tags: ["AI", "Automatisering", "Groei", "AI-agent"]
+cluster: "ai-automatisering"
 ---
 
 ## Wat is een AI-agent — in gewone taal

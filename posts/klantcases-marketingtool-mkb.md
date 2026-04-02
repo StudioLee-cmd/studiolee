@@ -5,6 +5,7 @@ date: "2026-03-20"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/klantcases-marketingtool-mkb.png"
 tags: ["Marketing", "Klantcases", "MKB"]
+cluster: "klantcase"
 ---
 
 ## Waarom klantcases werken

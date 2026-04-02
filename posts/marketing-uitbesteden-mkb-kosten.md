@@ -5,6 +5,7 @@ date: "2026-04-02"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/marketing-uitbesteden-mkb-kosten.png"
 tags: ["Marketing", "MKB"]
+cluster: ""
 ---
 
 Je runt een bedrijf, hebt klanten te helpen en weet dat je "iets met marketing" moet doen. Maar het zelf doen kost uren die je niet hebt, en een bureau inhuren voelt als een blanco cheque uitschrijven.

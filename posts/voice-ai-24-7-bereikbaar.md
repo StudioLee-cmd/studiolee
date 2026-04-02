@@ -5,6 +5,7 @@ date: "2026-01-25"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/voice-ai-24-7-bereikbaar.png"
 tags: ["Voice AI", "Automatisering", "Bereikbaarheid"]
+cluster: ""
 ---
 
 Het meest frustrerende moment voor elke ondernemer: je telefoon gaat terwijl je in een belangrijke meeting zit, gefocust aan het werk bent, of simpelweg even pauze neemt. Je wéét dat het een potentiële klant kan zijn. Een grote opdracht? Een spoedgeval? Snel geld. Maar je kunt niet opnemen. Je laat hem gaan.

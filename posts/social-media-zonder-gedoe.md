@@ -5,6 +5,7 @@ date: "2026-01-28"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/social-media-zonder-gedoe.png"
 tags: ["Social Media", "Marketing", "Automatisering"]
+cluster: ""
 ---
 
 Ik hoor het je denken: "Social Media? Daar heb ik toch geen tijd voor? Ik ben ondernemer, geen influencer!" En je hebt helemaal gelijk. Je moet niet gaan staan dansen op TikTok of foto's van je lunch posten. Dat is voor tieners en full-time content creators.

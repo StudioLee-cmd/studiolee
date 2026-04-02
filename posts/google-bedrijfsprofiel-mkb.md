@@ -5,6 +5,7 @@ date: "2026-03-27"
 authorSlug: "tim-van-der-lee"
 image: "/images/blog/google-bedrijfsprofiel-mkb.png"
 tags: ["google bedrijfsprofiel", "MKB", "lokale marketing"]
+cluster: "google-bedrijfsprofiel"
 ---
 
 Wanneer iemand zoekt op "[dienst] in de buurt", toont Google eerst de kaartresultaten. Drie bedrijven, met sterren, afstand en een belknop. Als jij daar niet tussen staat, mis je de meest waardevolle lokale leads die er zijn.
