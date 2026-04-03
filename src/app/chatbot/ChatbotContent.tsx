@@ -97,7 +97,7 @@ const painPoints = [
   {
     icon: BsQuestionCircle,
     title: "Steeds dezelfde vragen beantwoorden",
-    desc: ""Wat kost het?", "Hebben jullie plek?", "Hoe maak ik een afspraak?" — dagelijks dezelfde vragen die kostbare tijd vreten.",
+    desc: `"Wat kost het?", "Hebben jullie plek?", "Hoe maak ik een afspraak?" — dagelijks dezelfde vragen die kostbare tijd vreten.`,
   },
 ];
 
