@@ -30,7 +30,7 @@ Dit is je digitale visitekaartje in Google Maps. Een compleet profiel is het abs
 
 ### Pijler 2: Reviews
 
-Google Reviews zijn de lokale equivalent van mond-tot-mondreclame. Meer reviews + hogere score = hogere ranking + meer vertrouwen.
+[Google Reviews](/reviews) zijn de lokale equivalent van mond-tot-mondreclame. Meer reviews + hogere score = hogere ranking + meer vertrouwen.
 
 Bouw een systematisch proces: na elke succesvolle interactie stuur je een automatische review-uitnodiging. Geen handwerk, geen uitzonderingen. De bedrijven met de meeste en beste reviews winnen de lokale zoekopdrachten.
 
