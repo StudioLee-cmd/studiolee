@@ -26,7 +26,7 @@ const features = [
   {
     icon: BsImages,
     title: "AI Content Generatie",
-    desc: "Posts, afbeeldingen en video\u2019s worden automatisch gegenereerd met AI. Altijd on-brand, altijd relevant voor jouw doelgroep.",
+    desc: "Posts, afbeeldingen en video's worden automatisch gegenereerd met AI. Altijd on-brand, altijd relevant voor jouw doelgroep.",
   },
   {
     icon: BsCalendarWeek,
@@ -41,7 +41,7 @@ const features = [
   {
     icon: BsCameraVideo,
     title: "Video Content",
-    desc: "Korte video\u2019s en Reels gegenereerd met AI. Van talking-head clips tot product showcases — zonder duur productieteam.",
+    desc: "Korte video's en Reels gegenereerd met AI. Van talking-head clips tot product showcases — zonder duur productieteam.",
   },
   {
     icon: BsLightning,
@@ -64,7 +64,7 @@ const steps = [
   {
     number: "02",
     title: "Content Productie",
-    desc: "Wij maken posts, afbeeldingen en video\u2019s met AI en ons design team. Jij keurt goed of geeft feedback via WhatsApp.",
+    desc: "Wij maken posts, afbeeldingen en video's met AI en ons design team. Jij keurt goed of geeft feedback via WhatsApp.",
   },
   {
     number: "03",
@@ -98,11 +98,11 @@ const faqs = [
   },
   {
     q: "Hoe vaak wordt er gepost?",
-    a: "Dat hangt af van het pakket en de strategie. Gemiddeld 3-5 posts per week, met een mix van afbeeldingen, video\u2019s en tekst.",
+    a: "Dat hangt af van het pakket en de strategie. Gemiddeld 3-5 posts per week, met een mix van afbeeldingen, video's en tekst.",
   },
   {
     q: "Moet ik zelf content aanleveren?",
-    a: "Nee. Wij genereren alle content met AI en ons designteam. Als je eigen foto\u2019s of video\u2019s hebt, verwerken we die graag — maar het is niet nodig.",
+    a: "Nee. Wij genereren alle content met AI en ons designteam. Als je eigen foto's of video's hebt, verwerken we die graag — maar het is niet nodig.",
   },
   {
     q: "Kan ik posts goedkeuren voor ze live gaan?",
@@ -295,7 +295,7 @@ export default function SocialMediaContent() {
               <h3 className="text-lg font-bold mb-4">Traditioneel Social Media Bureau</h3>
               <ul className="space-y-3">
                 {[
-                  "\u20ac800 - \u20ac2.500 per maand (alleen social)",
+                  "€800 - €2.500 per maand (alleen social)",
                   "Handmatig content maken",
                   "Beperkt tot 1-2 platformen",
                   "Geen AI-tools",

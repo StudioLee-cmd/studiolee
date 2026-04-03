@@ -87,7 +87,7 @@ const painPoints = [
   {
     icon: BsXCircle,
     title: "Leads kwijt na sluitingstijd",
-    desc: "Klanten bezoeken je website \u2019s avonds of in het weekend. Zonder chatbot horen ze pas de volgende werkdag iets — en hebben ze al een concurrent gebeld.",
+    desc: "Klanten bezoeken je website 's avonds of in het weekend. Zonder chatbot horen ze pas de volgende werkdag iets — en hebben ze al een concurrent gebeld.",
   },
   {
     icon: BsClockHistory,
@@ -97,7 +97,7 @@ const painPoints = [
   {
     icon: BsQuestionCircle,
     title: "Steeds dezelfde vragen beantwoorden",
-    desc: "\u201cWat kost het?\u201d, \u201cHebben jullie plek?\u201d, \u201cHoe maak ik een afspraak?\u201d — dagelijks dezelfde vragen die kostbare tijd vreten.",
+    desc: ""Wat kost het?", "Hebben jullie plek?", "Hoe maak ik een afspraak?" — dagelijks dezelfde vragen die kostbare tijd vreten.",
   },
 ];
 
@@ -334,12 +334,12 @@ export default function ChatbotContent() {
           >
             <p className="text-sm text-gray-400 mb-2">Traditioneel marketing bureau</p>
             <p className="text-2xl md:text-3xl font-bold mb-2">
-              <span className="line-through text-gray-500">\u20ac1.500 \u2013 \u20ac3.000/mnd</span>
+              <span className="line-through text-gray-500">€1.500 – €3.000/mnd</span>
             </p>
             <p className="text-sm text-gray-400 mb-4">Chatbot als losse add-on, beperkte support, geen branche-expertise</p>
             <div className="w-16 h-px bg-gray-600 mx-auto mb-4"></div>
             <p className="text-primary font-semibold text-lg">{brand}</p>
-            <p className="text-3xl md:text-4xl font-bold">Managed service \u2014 chatbot inbegrepen</p>
+            <p className="text-3xl md:text-4xl font-bold">Managed service — chatbot inbegrepen</p>
             <p className="text-sm text-gray-300 mt-2">AI chatbot standaard in elk pakket. Inclusief branche-specifieke training en doorlopende optimalisatie.</p>
           </motion.div>
 
@@ -348,7 +348,7 @@ export default function ChatbotContent() {
               <h3 className="text-lg font-bold mb-4">Traditioneel Bureau</h3>
               <ul className="space-y-3">
                 {[
-                  "\u20ac1.500 - \u20ac3.000 per maand",
+                  "€1.500 - €3.000 per maand",
                   "Wekenlange oplevering",
                   "Chatbot als losse add-on (meerprijs)",
                   "Generieke antwoorden, niet branche-specifiek",
@@ -374,7 +374,7 @@ export default function ChatbotContent() {
                   "Live binnen 1-2 werkdagen",
                   "Getraind op jouw specifieke branche",
                   "24/7 systeem, altijd bereikbaar",
-                  "Managed service \u2014 wij doen het werk",
+                  "Managed service — wij doen het werk",
                   "Gebouwd met de nieuwste AI-technologie",
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm">

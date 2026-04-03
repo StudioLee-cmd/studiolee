@@ -40,7 +40,7 @@ const packages = [
   {
     name: "Professional",
     price: "349",
-    period: "eenmalig + \u20ac29/mnd",
+    period: "eenmalig + €29/mnd",
     description: "NFC kaarten + geautomatiseerde review flows",
     features: [
       "5x NFC Review Kaart (jouw branding)",
@@ -57,7 +57,7 @@ const packages = [
   {
     name: "Enterprise",
     price: "599",
-    period: "eenmalig + \u20ac49/mnd",
+    period: "eenmalig + €49/mnd",
     description: "Alles uit Professional + response management",
     features: [
       "10x NFC Review Kaart (jouw branding)",
@@ -216,7 +216,7 @@ export default function ReviewPakketContent() {
                 <h3 className="text-xl font-bold mb-1 mt-1">{pkg.name}</h3>
                 <p className="text-foreground-accent text-sm mb-4">{pkg.description}</p>
                 <div className="mb-4">
-                  <span className="text-3xl font-bold">\u20ac{pkg.price}</span>
+                  <span className="text-3xl font-bold">€{pkg.price}</span>
                   <span className="text-foreground-accent text-sm ml-1">{pkg.period}</span>
                 </div>
                 <ul className="space-y-2 mb-6">

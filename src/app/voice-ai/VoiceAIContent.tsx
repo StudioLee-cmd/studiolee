@@ -309,7 +309,7 @@ export default function VoiceAIContent() {
               <h3 className="text-lg font-bold mb-4">Traditionele Receptionist / Antwoordservice</h3>
               <ul className="space-y-3">
                 {[
-                  "\u20ac2.000+ per maand (fulltime)",
+                  "€2.000+ per maand (fulltime)",
                   "Alleen beschikbaar tijdens kantooruren",
                   "Ziekmelding = onbereikbaar",
                   "Geen directe agenda-integratie",

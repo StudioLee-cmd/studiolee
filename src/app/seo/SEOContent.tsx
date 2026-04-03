@@ -66,7 +66,7 @@ const steps = [
   {
     number: "02",
     title: "Content & Optimalisatie",
-    desc: "We publiceren dagelijks SEO-artikelen, optimaliseren bestaande pagina\u2019s en bouwen de technische basis op.",
+    desc: "We publiceren dagelijks SEO-artikelen, optimaliseren bestaande pagina's en bouwen de technische basis op.",
   },
   {
     number: "03",
@@ -186,8 +186,8 @@ export default function SEOContent() {
           <div className="text-foreground-accent space-y-4 text-base leading-relaxed">
             <p>
               SEO staat voor Search Engine Optimization — het proces om jouw website hoger
-              te laten scoren in Google. Wanneer iemand zoekt op \u201cloodgieter Rotterdam\u201d
-              of \u201ckapper in de buurt\u201d, bepaalt SEO of jouw bedrijf bovenaan staat
+              te laten scoren in Google. Wanneer iemand zoekt op "loodgieter Rotterdam"
+              of "kapper in de buurt", bepaalt SEO of jouw bedrijf bovenaan staat
               of onzichtbaar blijft.
             </p>
             <p>
@@ -301,12 +301,12 @@ export default function SEOContent() {
           >
             <p className="text-sm text-gray-400 mb-2">Traditioneel SEO bureau</p>
             <p className="text-2xl md:text-3xl font-bold mb-2">
-              <span className="line-through text-gray-500">\u20ac1.000 \u2013 \u20ac5.000/mnd</span>
+              <span className="line-through text-gray-500">€1.000 – €5.000/mnd</span>
             </p>
             <p className="text-sm text-gray-400 mb-4">Maandrapport, een paar artikelen, weinig transparantie</p>
             <div className="w-16 h-px bg-gray-600 mx-auto mb-4"></div>
             <p className="text-primary font-semibold text-lg">{brand}</p>
-            <p className="text-3xl md:text-4xl font-bold">Dagelijkse SEO \u2014 inbegrepen in managed service</p>
+            <p className="text-3xl md:text-4xl font-bold">Dagelijkse SEO — inbegrepen in managed service</p>
             <p className="text-sm text-gray-300 mt-2">Dagelijks nieuwe content, Ahrefs-onderzoek, technische SEO en AEO. Alles inbegrepen.</p>
           </motion.div>
 
@@ -315,7 +315,7 @@ export default function SEOContent() {
               <h3 className="text-lg font-bold mb-4">Traditioneel SEO Bureau</h3>
               <ul className="space-y-3">
                 {[
-                  "\u20ac1.000 - \u20ac5.000 per maand",
+                  "€1.000 - €5.000 per maand",
                   "Maandelijks 2-4 artikelen",
                   "Geen AEO (AI-zoekmachines)",
                   "Rapporten vol jargon",
