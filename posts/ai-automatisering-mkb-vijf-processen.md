@@ -15,7 +15,7 @@ Het verschil: MKB-bedrijven die nu automatiseren, besparen 10 tot 20 uur per wee
 
 ## Proces 1: Automatische lead opvolging
 
-**Wat het is:** Elke binnenkomende aanvraag (website, telefoon, social media) krijgt automatisch een eerste reactie binnen 1 minuut. Follow-ups worden automatisch verstuurd als de lead niet reageert.
+**Wat het is:** Elke binnenkomende aanvraag (website, telefoon, social media) krijgt via een [AI chatbot](/chatbot) automatisch een eerste reactie binnen 1 minuut. Follow-ups worden automatisch verstuurd als de lead niet reageert.
 
 **Wat het oplevert:** 30-50% hogere conversie van aanvragen naar klanten. De eerste die reageert, wint — en je reageert altijd het eerst.
 
@@ -25,13 +25,13 @@ Het verschil: MKB-bedrijven die nu automatiseren, besparen 10 tot 20 uur per wee
 
 **Wat het is:** Na elke afgeronde dienst of verkoop stuurt je systeem automatisch een reviewverzoek via WhatsApp. Geen handwerk, geen vergeten.
 
-**Wat het oplevert:** 3x meer Google Reviews per maand. Meer reviews = hogere Google-ranking = meer klanten. Het is een vliegwiel.
+**Wat het oplevert:** 3x meer [Google Reviews](/reviews) per maand. Meer reviews = hogere Google-ranking = meer klanten. Het is een vliegwiel.
 
 **Hoe je start:** Koppel je planning of kassasysteem aan WhatsApp Business. Stel een template in. Klaar.
 
 ## Proces 3: Afspraakherinneringen
 
-**Wat het is:** Automatische WhatsApp-herinneringen 24 uur en 2 uur voor elke afspraak. Inclusief bevestigingsknop.
+**Wat het is:** Automatische WhatsApp-herinneringen via [slimme telefonie](/voice-ai) 24 uur en 2 uur voor elke afspraak. Inclusief bevestigingsknop.
 
 **Wat het oplevert:** 50-70% minder no-shows. Bij twee no-shows per week van €75 bespaar je €600 per maand.
 
@@ -49,7 +49,7 @@ Het verschil: MKB-bedrijven die nu automatiseren, besparen 10 tot 20 uur per wee
 
 ## Proces 5: Content en social media planning
 
-**Wat het is:** AI genereert SEO-geoptimaliseerde blogartikelen en social media posts. Een redactiesysteem plant en publiceert automatisch.
+**Wat het is:** AI genereert [SEO-geoptimaliseerde blogartikelen](/seo) en [social media posts](/social-media). Een redactiesysteem plant en publiceert automatisch.
 
 **Wat het oplevert:** Consistente online aanwezigheid zonder dat je er uren per week aan besteedt. Na 3-6 maanden: meetbaar meer websitebezoekers en klanten via Google.
 
