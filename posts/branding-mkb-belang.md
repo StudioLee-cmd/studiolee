@@ -60,6 +60,16 @@ Veel MKB-ondernemers denken dat branding een project van €10.000+ is. Dat hoef
 - Reviews verzamelen: automatiseerbaar voor €0 extra
 - Social media: automatiseerbaar
 
+
+
+## Automatiseren: zo doe je het zonder extra moeite
+
+Je hoeft dit niet allemaal handmatig te doen. Met de juiste tools draait het op de achtergrond terwijl jij gewoon je werk doet als ondernemer.
+
+Een [gratis gesprek](/free-trial) vangt automatisch vragen op en plant afspraken in — ook buiten werktijd. Een [tarieven](/tarieven) zorgt ervoor dat je bereikbaar bent zonder zelf de telefoon op te pakken. En met [automatische review-verzoeken](/reviews) bouw je ondertussen je online reputatie op.
+
+Het resultaat? Meer klanten, minder administratie, en een systeem dat draait zonder dat je eraan hoeft te denken. Alles begint met een [SEO](/seo) — we analyseren je huidige situatie en laten zien wat er mogelijk is.
+
 ## Conclusie
 
 Branding is geen luxe voor grote bedrijven. Het is de reden waarom sommige MKB-ondernemers altijd vol zitten en andere altijd moeten zoeken naar klanten. Investeer in hoe je overkomt, en het werk komt vanzelf.
