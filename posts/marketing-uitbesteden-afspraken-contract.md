@@ -50,8 +50,6 @@ Stel dat een installateur in Apeldoorn 4 jaar lang reviews verzamelt op een prof
 
 ## Afspraak 2: wie levert wat aan
 
-![Afspraak 2: wie levert wat aan](/images/blog/marketing-uitbesteden-afspraken-contract-2.jpg)
-
 De meeste samenwerkingen lopen niet vast op slecht werk, maar op een map met foto's die nooit komt. Wie marketing uitbesteden serieus aanpakt, schrijft op wat jij aanlevert, wanneer, en wat er gebeurt als je dat niet doet. Zo weet je vooraf hoeveel tijd het jou per maand kost.
 
 ### Wat jij aanlevert, en hoe vaak
@@ -126,6 +124,8 @@ Wie je een toppositie in Google belooft op een vaste datum, verkoopt hoop. Vindb
 Dat laatste is de echte toets. Een bureau dat zelf durft op te schrijven wanneer het zou moeten bijsturen, gelooft in zijn eigen werk. Er is geen knop die dit oplost, en wie die knop toch verkoopt, wil je juist niet in je accounts.
 
 ## Afspraak 5: opzegtermijn en overdracht
+
+![Afspraak 5: opzegtermijn en overdracht](/images/blog/marketing-uitbesteden-afspraken-contract-2.jpg)
 
 Twee vragen die samen het hele contract waard zijn: hoe kom je eruit, en wat neem je mee. De opzegtermijn is het makkelijke deel. De overdracht is het deel dat bijna niemand opschrijft, terwijl daar het meeste geld en de meeste tijd verloren gaat.
 
